@@ -1,0 +1,61 @@
+<div class="main">
+  <div class="title">Every Second Counts</div>
+  <div class="container">
+    <div style="display:flex; margin-top: 20px;">
+      <div class="vidContainer">
+        <!-- <video *ngIf="!quadview" class="videofeed" autoplay muted #videoElement src={{getCameraSrc()}}></video> -->
+        <!-- <iframe *ngIf="!quadview" class="videofeed" #videoElement1 autoplay muted src="http://192.168.43.224:3000"></iframe> -->
+        <div *ngIf="quadview" class="quadView">
+            <table *ngIf="cameraStreamMap">
+              <tr>
+                <td>
+                    <iframe class="videofeed" #videoElement1 autoplay muted src="http://192.168.43.224:3000"></iframe>
+                </td>
+                <td>
+                    <iframe class="videofeed" autoplay muted #videoElement2 src="http://192.168.43.81:3000"></iframe>
+                </td>
+              </tr>
+              <tr>
+                <td style="padding-left: 31px">
+                    <div class="videofeed1" autoplay muted #videoElement3>
+                      <div class="image1"></div>
+                    </div>
+                </td>
+                <td style="padding-left: 31px">
+                    <div class="videofeed1" autoplay muted #videoElement4>
+                      <div class="image2">
+
+                      </div>
+                    </div>
+                </td>
+              </tr>
+            </table>
+          </div>
+          <div>
+            <button class="button-icon-only" (click)="switchView()"><i class="ms" [ngClass]="(quadview)?'ms-grid-view-large':'ms-view-all'"></i></button>
+            <button class="button-icon-only" (click)="fullscreen()"><i class="ms" [ngClass]="(isFullscreen)?'ms-back-to-window':'ms-full-screen'"></i></button>
+          </div>
+          
+      </div>
+      <div class="right">
+        <div class="map">
+          <div class="image"></div>
+          <div class="target target1"><i class="ms ms-video"></i></div>
+          <div class="target target2"><i class="ms ms-video"></i></div>
+          <div class="target target3"><i class="ms ms-video"></i></div>
+          <div class="target target4"><i class="ms ms-video"></i></div>
+        </div>
+        <div class="alice">
+          <div class="buttons">
+            <button>Alert</button>
+            <button>Lockdown</button>
+            <button>Inform</button>
+            <button>Counter</button>
+            <button>Evacuate</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<div [ngClass]="{'alert': alarmOn}"></div>

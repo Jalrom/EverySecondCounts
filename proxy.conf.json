@@ -1,0 +1,10 @@
+{
+    "/": {
+        "target": "https://tsihotapi.azurewebsites.net/",
+        "secure": true,
+        "pathRewrite": {
+            "^/": ""
+        },
+        "changeOrigin": true
+    }
+}

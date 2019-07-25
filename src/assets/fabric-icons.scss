@@ -1,0 +1,6796 @@
+@font-face {
+    font-family: FabricMDL2;
+    src: url(../assets/FabMDL2.ttf) format("truetype")
+}
+
+.ms {
+    font-family: FabricMDL2;
+    font-style: normal;
+    -webkit-font-smoothing: antialiased;
+    display: inline-block;
+    height: 1em;
+    width: 1em;
+}
+
+.button-icon-only {
+    width: 2em; // For icon-only button, make it square.
+    height: 2em;
+    display: inline-flex;
+    justify-content: center;
+}
+
+.ms-globalnavbutton::before {
+    content: "\e700";
+}
+
+.ms-internet-sharing::before {
+    content: "\e704";
+}
+
+.ms-brightness::before {
+    content: "\e706";
+}
+
+.ms-map-pin::before {
+    content: "\e707";
+}
+
+.ms-airplane::before {
+    content: "\e709";
+}
+
+.ms-tablet::before {
+    content: "\e70a";
+}
+
+.ms-quick-note::before {
+    content: "\e70b";
+}
+
+.ms-chevron-down::before {
+    content: "\e70d";
+}
+
+.ms-chevron-up::before {
+    content: "\e70e";
+}
+
+.ms-edit::before {
+    content: "\e70f";
+}
+
+.ms-add::before {
+    content: "\e710";
+}
+
+.ms-cancel::before {
+    content: "\e711";
+}
+
+.ms-more::before {
+    content: "\e712";
+}
+
+.ms-settings::before {
+    content: "\e713";
+}
+
+.ms-video::before {
+    content: "\e714";
+}
+
+.ms-mail::before {
+    content: "\e715";
+}
+
+.ms-people::before {
+    content: "\e716";
+}
+
+.ms-phone::before {
+    content: "\e717";
+}
+
+.ms-pin::before {
+    content: "\e718";
+}
+
+.ms-shop::before {
+    content: "\e719";
+}
+
+.ms-stop::before {
+    content: "\e71a";
+}
+
+.ms-link::before {
+    content: "\e71b";
+}
+
+.ms-filter::before {
+    content: "\e71c";
+}
+
+.ms-all-apps::before {
+    content: "\e71d";
+}
+
+.ms-zoom::before {
+    content: "\e71e";
+}
+
+.ms-zoom-out::before {
+    content: "\e71f";
+}
+
+.ms-microphone::before {
+    content: "\e720";
+}
+
+.ms-search::before {
+    content: "\e721";
+}
+
+.ms-camera::before {
+    content: "\e722";
+}
+
+.ms-attach::before {
+    content: "\e723";
+}
+
+.ms-send::before {
+    content: "\e724";
+}
+
+.ms-favorite-list::before {
+    content: "\e728";
+}
+
+.ms-page-solid::before {
+    content: "\e729";
+}
+
+.ms-forward::before {
+    content: "\e72a";
+}
+
+.ms-back::before {
+    content: "\e72b";
+}
+
+.ms-refresh::before {
+    content: "\e72c";
+}
+
+.ms-share::before {
+    content: "\e72d";
+}
+
+.ms-lock::before {
+    content: "\e72e";
+}
+
+.ms-blocked-site::before {
+    content: "\e72f";
+}
+
+.ms-report-hacked::before {
+    content: "\e730";
+}
+
+.ms-e-m-i::before {
+    content: "\e731";
+}
+
+.ms-mini-link::before {
+    content: "\e732";
+}
+
+.ms-blocked::before {
+    content: "\e733";
+}
+
+.ms-favorite-star::before {
+    content: "\e734";
+}
+
+.ms-favorite-star-fill::before {
+    content: "\e735";
+}
+
+.ms-reading-mode::before {
+    content: "\e736";
+}
+
+.ms-favicon::before {
+    content: "\e737";
+}
+
+.ms-remove::before {
+    content: "\e738";
+}
+
+.ms-checkbox::before {
+    content: "\e739";
+}
+
+.ms-checkbox-composite::before {
+    content: "\e73a";
+}
+
+.ms-checkbox-fill::before {
+    content: "\e73b";
+}
+
+.ms-checkbox-indeterminate::before {
+    content: "\e73c";
+}
+
+.ms-checkbox-composite-reversed::before {
+    content: "\e73d";
+}
+
+.ms-check-mark::before {
+    content: "\e73e";
+}
+
+.ms-back-to-window::before {
+    content: "\e73f";
+}
+
+.ms-full-screen::before {
+    content: "\e740";
+}
+
+.ms-print::before {
+    content: "\e749";
+}
+
+.ms-up::before {
+    content: "\e74a";
+}
+
+.ms-down::before {
+    content: "\e74b";
+}
+
+.ms-o-e-m::before {
+    content: "\e74c";
+}
+
+.ms-delete::before {
+    content: "\e74d";
+}
+
+.ms-save::before {
+    content: "\e74e";
+}
+
+.ms-cloud::before {
+    content: "\e753";
+}
+
+.ms-flashlight::before {
+    content: "\e754";
+}
+
+.ms-command-prompt::before {
+    content: "\e756";
+}
+
+.ms-sad::before {
+    content: "\e757";
+}
+
+.ms-real-estate::before {
+    content: "\e758";
+}
+
+.ms-s-i-p-move::before {
+    content: "\e759";
+}
+
+.ms-erase-tool::before {
+    content: "\e75c";
+}
+
+.ms-gripper-tool::before {
+    content: "\e75e";
+}
+
+.ms-dialpad::before {
+    content: "\e75f";
+}
+
+.ms-page-left::before {
+    content: "\e760";
+}
+
+.ms-page-right::before {
+    content: "\e761";
+}
+
+.ms-multi-select::before {
+    content: "\e762";
+}
+
+.ms-keyboard-classic::before {
+    content: "\e765";
+}
+
+.ms-play::before {
+    content: "\e768";
+}
+
+.ms-pause::before {
+    content: "\e769";
+}
+
+.ms-chevron-left::before {
+    content: "\e76b";
+}
+
+.ms-chevron-right::before {
+    content: "\e76c";
+}
+
+.ms-emoji2::before {
+    content: "\e76e";
+}
+
+.ms-gripper-bar-horizontal::before {
+    content: "\e76f";
+}
+
+.ms-system::before {
+    content: "\e770";
+}
+
+.ms-personalize::before {
+    content: "\e771";
+}
+
+.ms-search-and-apps::before {
+    content: "\e773";
+}
+
+.ms-globe::before {
+    content: "\e774";
+}
+
+.ms-ease-of-access::before {
+    content: "\e776";
+}
+
+.ms-contact-info::before {
+    content: "\e779";
+}
+
+.ms-unpin::before {
+    content: "\e77a";
+}
+
+.ms-contact::before {
+    content: "\e77b";
+}
+
+.ms-memo::before {
+    content: "\e77c";
+}
+
+.ms-paste::before {
+    content: "\e77f";
+}
+
+.ms-windows-logo::before {
+    content: "\e782";
+}
+
+.ms-error::before {
+    content: "\e783";
+}
+
+.ms-gripper-bar-vertical::before {
+    content: "\e784";
+}
+
+.ms-unlock::before {
+    content: "\e785";
+}
+
+.ms-slideshow::before {
+    content: "\e786";
+}
+
+.ms-calendar::before {
+    content: "\e787";
+}
+
+.ms-megaphone::before {
+    content: "\e789";
+}
+
+.ms-auto-enhance-on::before {
+    content: "\e78d";
+}
+
+.ms-auto-enhance-off::before {
+    content: "\e78e";
+}
+
+.ms-color::before {
+    content: "\e790";
+}
+
+.ms-save-as::before {
+    content: "\e792";
+}
+
+.ms-light::before {
+    content: "\e793";
+}
+
+.ms-filters::before {
+    content: "\e795";
+}
+
+.ms-aspect-ratio::before {
+    content: "\e799";
+}
+
+.ms-contrast::before {
+    content: "\e7a1";
+}
+
+.ms-redo::before {
+    content: "\e7a6";
+}
+
+.ms-undo::before {
+    content: "\e7a7";
+}
+
+.ms-crop::before {
+    content: "\e7a8";
+}
+
+.ms-photo-collection::before {
+    content: "\e7aa";
+}
+
+.ms-album::before {
+    content: "\e7ab";
+}
+
+.ms-rotate::before {
+    content: "\e7ad";
+}
+
+.ms-pano-indicator::before {
+    content: "\e7b0";
+}
+
+.ms-translate::before {
+    content: "\e7b2";
+}
+
+.ms-red-eye::before {
+    content: "\e7b3";
+}
+
+.ms-thumbnail-view::before {
+    content: "\e7b6";
+}
+
+.ms-package::before {
+    content: "\e7b8";
+}
+
+.ms-telemarketer::before {
+    content: "\e7b9";
+}
+
+.ms-warning::before {
+    content: "\e7ba";
+}
+
+.ms-financial::before {
+    content: "\e7bb";
+}
+
+.ms-education::before {
+    content: "\e7be";
+}
+
+.ms-shopping-cart::before {
+    content: "\e7bf";
+}
+
+.ms-train::before {
+    content: "\e7c0";
+}
+
+.ms-flag::before {
+    content: "\e7c1";
+}
+
+.ms-move::before {
+    content: "\e7c2";
+}
+
+.ms-page::before {
+    content: "\e7c3";
+}
+
+.ms-touch-pointer::before {
+    content: "\e7c9";
+}
+
+.ms-merge::before {
+    content: "\e7d5";
+}
+
+.ms-turn-right::before {
+    content: "\e7db";
+}
+
+.ms-ferry::before {
+    content: "\e7e3";
+}
+
+.ms-highlight::before {
+    content: "\e7e6";
+}
+
+.ms-power-button::before {
+    content: "\e7e8";
+}
+
+.ms-tab::before {
+    content: "\e7e9";
+}
+
+.ms-admin::before {
+    content: "\e7ef";
+}
+
+.ms-t-v-monitor::before {
+    content: "\e7f4";
+}
+
+.ms-speakers::before {
+    content: "\e7f5";
+}
+
+.ms-game::before {
+    content: "\e7fc";
+}
+
+.ms-unstack-selected::before {
+    content: "\e7fe";
+}
+
+.ms-stack-indicator::before {
+    content: "\e7ff";
+}
+
+.ms-nav2-d-map-view::before {
+    content: "\e800";
+}
+
+.ms-streetside-split-minimize::before {
+    content: "\e802";
+}
+
+.ms-car::before {
+    content: "\e804";
+}
+
+.ms-bus::before {
+    content: "\e806";
+}
+
+.ms-eat-drink::before {
+    content: "\e807";
+}
+
+.ms-see-do::before {
+    content: "\e808";
+}
+
+.ms-location-circle::before {
+    content: "\e80e";
+}
+
+.ms-home::before {
+    content: "\e80f";
+}
+
+.ms-switcher-start-end::before {
+    content: "\e810";
+}
+
+.ms-parking-location::before {
+    content: "\e811";
+}
+
+.ms-incident-triangle::before {
+    content: "\e814";
+}
+
+.ms-touch::before {
+    content: "\e815";
+}
+
+.ms-map-directions::before {
+    content: "\e816";
+}
+
+.ms-caret-hollow::before {
+    content: "\e817";
+}
+
+.ms-caret-solid::before {
+    content: "\e818";
+}
+
+.ms-history::before {
+    content: "\e81c";
+}
+
+.ms-location::before {
+    content: "\e81d";
+}
+
+.ms-map-layers::before {
+    content: "\e81e";
+}
+
+.ms-search-nearby::before {
+    content: "\e820";
+}
+
+.ms-work::before {
+    content: "\e821";
+}
+
+.ms-recent::before {
+    content: "\e823";
+}
+
+.ms-hotel::before {
+    content: "\e824";
+}
+
+.ms-bank::before {
+    content: "\e825";
+}
+
+.ms-location-dot::before {
+    content: "\e827";
+}
+
+.ms-dictionary::before {
+    content: "\e82d";
+}
+
+.ms-chrome-back::before {
+    content: "\e830";
+}
+
+.ms-folder-open::before {
+    content: "\e838";
+}
+
+.ms-pinned::before {
+    content: "\e840";
+}
+
+.ms-pinned-fill::before {
+    content: "\e842";
+}
+
+.ms-rev-toggle-key::before {
+    content: "\e845";
+}
+
+.ms-view::before {
+    content: "\e890";
+}
+
+.ms-previous::before {
+    content: "\e892";
+}
+
+.ms-next::before {
+    content: "\e893";
+}
+
+.ms-clear::before {
+    content: "\e894";
+}
+
+.ms-sync::before {
+    content: "\e895";
+}
+
+.ms-download::before {
+    content: "\e896";
+}
+
+.ms-help::before {
+    content: "\e897";
+}
+
+.ms-upload::before {
+    content: "\e898";
+}
+
+.ms-emoji::before {
+    content: "\e899";
+}
+
+.ms-mail-forward::before {
+    content: "\e89c";
+}
+
+.ms-close-pane::before {
+    content: "\e89f";
+}
+
+.ms-open-pane::before {
+    content: "\e8a0";
+}
+
+.ms-preview-link::before {
+    content: "\e8a1";
+}
+
+.ms-zoom-in::before {
+    content: "\e8a3";
+}
+
+.ms-bookmarks::before {
+    content: "\e8a4";
+}
+
+.ms-document::before {
+    content: "\e8a5";
+}
+
+.ms-protected-document::before {
+    content: "\e8a6";
+}
+
+.ms-open-in-new-window::before {
+    content: "\e8a7";
+}
+
+.ms-mail-fill::before {
+    content: "\e8a8";
+}
+
+.ms-view-all::before {
+    content: "\e8a9";
+}
+
+.ms-switch::before {
+    content: "\e8ab";
+}
+
+.ms-rename::before {
+    content: "\e8ac";
+}
+
+.ms-go::before {
+    content: "\e8ad";
+}
+
+.ms-remote::before {
+    content: "\e8af";
+}
+
+.ms-select-all::before {
+    content: "\e8b3";
+}
+
+.ms-orientation::before {
+    content: "\e8b4";
+}
+
+.ms-import::before {
+    content: "\e8b5";
+}
+
+.ms-folder::before {
+    content: "\e8b7";
+}
+
+.ms-picture::before {
+    content: "\e8b9";
+}
+
+.ms-chrome-close::before {
+    content: "\e8bb";
+}
+
+.ms-show-results::before {
+    content: "\e8bc";
+}
+
+.ms-message::before {
+    content: "\e8bd";
+}
+
+.ms-calendar-day::before {
+    content: "\e8bf";
+}
+
+.ms-calendar-week::before {
+    content: "\e8c0";
+}
+
+.ms-mail-reply-all::before {
+    content: "\e8c2";
+}
+
+.ms-read::before {
+    content: "\e8c3";
+}
+
+.ms-cut::before {
+    content: "\e8c6";
+}
+
+.ms-payment-card::before {
+    content: "\e8c7";
+}
+
+.ms-copy::before {
+    content: "\e8c8";
+}
+
+.ms-important::before {
+    content: "\e8c9";
+}
+
+.ms-mail-reply::before {
+    content: "\e8ca";
+}
+
+.ms-sort::before {
+    content: "\e8cb";
+}
+
+.ms-goto-today::before {
+    content: "\e8d1";
+}
+
+.ms-font::before {
+    content: "\e8d2";
+}
+
+.ms-font-color::before {
+    content: "\e8d3";
+}
+
+.ms-folder-fill::before {
+    content: "\e8d5";
+}
+
+.ms-permissions::before {
+    content: "\e8d7";
+}
+
+.ms-disable-updates::before {
+    content: "\e8d8";
+}
+
+.ms-unfavorite::before {
+    content: "\e8d9";
+}
+
+.ms-italic::before {
+    content: "\e8db";
+}
+
+.ms-underline::before {
+    content: "\e8dc";
+}
+
+.ms-bold::before {
+    content: "\e8dd";
+}
+
+.ms-move-to-folder::before {
+    content: "\e8de";
+}
+
+.ms-dislike::before {
+    content: "\e8e0";
+}
+
+.ms-like::before {
+    content: "\e8e1";
+}
+
+.ms-align-right::before {
+    content: "\e8e2";
+}
+
+.ms-align-center::before {
+    content: "\e8e3";
+}
+
+.ms-align-left::before {
+    content: "\e8e4";
+}
+
+.ms-open-file::before {
+    content: "\e8e5";
+}
+
+.ms-font-decrease::before {
+    content: "\e8e7";
+}
+
+.ms-font-increase::before {
+    content: "\e8e8";
+}
+
+.ms-font-size::before {
+    content: "\e8e9";
+}
+
+.ms-cell-phone::before {
+    content: "\e8ea";
+}
+
+.ms-tag::before {
+    content: "\e8ec";
+}
+
+.ms-repeat-all::before {
+    content: "\e8ee";
+}
+
+.ms-calculator::before {
+    content: "\e8ef";
+}
+
+.ms-library::before {
+    content: "\e8f1";
+}
+
+.ms-post-update::before {
+    content: "\e8f3";
+}
+
+.ms-new-folder::before {
+    content: "\e8f4";
+}
+
+.ms-calendar-reply::before {
+    content: "\e8f5";
+}
+
+.ms-unsync-folder::before {
+    content: "\e8f6";
+}
+
+.ms-sync-folder::before {
+    content: "\e8f7";
+}
+
+.ms-block-contact::before {
+    content: "\e8f8";
+}
+
+.ms-add-friend::before {
+    content: "\e8fa";
+}
+
+.ms-accept::before {
+    content: "\e8fb";
+}
+
+.ms-bulleted-list::before {
+    content: "\e8fd";
+}
+
+.ms-preview::before {
+    content: "\e8ff";
+}
+
+.ms-news::before {
+    content: "\e900";
+}
+
+.ms-chat::before {
+    content: "\e901";
+}
+
+.ms-group::before {
+    content: "\e902";
+}
+
+.ms-world::before {
+    content: "\e909";
+}
+
+.ms-comment::before {
+    content: "\e90a";
+}
+
+.ms-dock-left::before {
+    content: "\e90c";
+}
+
+.ms-dock-right::before {
+    content: "\e90d";
+}
+
+.ms-repair::before {
+    content: "\e90f";
+}
+
+.ms-accounts::before {
+    content: "\e910";
+}
+
+.ms-street::before {
+    content: "\e913";
+}
+
+.ms-radio-bullet::before {
+    content: "\e915";
+}
+
+.ms-stopwatch::before {
+    content: "\e916";
+}
+
+.ms-clock::before {
+    content: "\e917";
+}
+
+.ms-world-clock::before {
+    content: "\e918";
+}
+
+.ms-alarm-clock::before {
+    content: "\e919";
+}
+
+.ms-photo::before {
+    content: "\e91b";
+}
+
+.ms-action-center::before {
+    content: "\e91c";
+}
+
+.ms-hospital::before {
+    content: "\e91d";
+}
+
+.ms-timer::before {
+    content: "\e91e";
+}
+
+.ms-full-circle-mask::before {
+    content: "\e91f";
+}
+
+.ms-location-fill::before {
+    content: "\e920";
+}
+
+.ms-chrome-minimize::before {
+    content: "\e921";
+}
+
+.ms-chrome-restore::before {
+    content: "\e923";
+}
+
+.ms-annotation::before {
+    content: "\e924";
+}
+
+.ms-fingerprint::before {
+    content: "\e928";
+}
+
+.ms-handwriting::before {
+    content: "\e929";
+}
+
+.ms-chrome-full-screen::before {
+    content: "\e92d";
+}
+
+.ms-completed::before {
+    content: "\e930";
+}
+
+.ms-label::before {
+    content: "\e932";
+}
+
+.ms-flick-down::before {
+    content: "\e935";
+}
+
+.ms-flick-up::before {
+    content: "\e936";
+}
+
+.ms-flick-left::before {
+    content: "\e937";
+}
+
+.ms-flick-right::before {
+    content: "\e938";
+}
+
+.ms-mini-expand::before {
+    content: "\e93a";
+}
+
+.ms-mini-contract::before {
+    content: "\e93b";
+}
+
+.ms-streaming::before {
+    content: "\e93e";
+}
+
+.ms-music-in-collection::before {
+    content: "\e940";
+}
+
+.ms-one-drive-logo::before {
+    content: "\e941";
+}
+
+.ms-compass-n-w::before {
+    content: "\e942";
+}
+
+.ms-code::before {
+    content: "\e943";
+}
+
+.ms-lightning-bolt::before {
+    content: "\e945";
+}
+
+.ms-info::before {
+    content: "\e946";
+}
+
+.ms-calculator-multiply::before {
+    content: "\e947";
+}
+
+.ms-calculator-addition::before {
+    content: "\e948";
+}
+
+.ms-calculator-subtract::before {
+    content: "\e949";
+}
+
+.ms-calculator-equal-to::before {
+    content: "\e94e";
+}
+
+.ms-printfax-printer-file::before {
+    content: "\e956";
+}
+
+.ms-storage-optical::before {
+    content: "\e958";
+}
+
+.ms-communications::before {
+    content: "\e95a";
+}
+
+.ms-headset::before {
+    content: "\e95b";
+}
+
+.ms-health::before {
+    content: "\e95e";
+}
+
+.ms-front-camera::before {
+    content: "\e96b";
+}
+
+.ms-chevron-up-small::before {
+    content: "\e96d";
+}
+
+.ms-chevron-down-small::before {
+    content: "\e96e";
+}
+
+.ms-chevron-left-small::before {
+    content: "\e96f";
+}
+
+.ms-chevron-right-small::before {
+    content: "\e970";
+}
+
+.ms-chevron-up-med::before {
+    content: "\e971";
+}
+
+.ms-chevron-down-med::before {
+    content: "\e972";
+}
+
+.ms-chevron-left-med::before {
+    content: "\e973";
+}
+
+.ms-chevron-right-med::before {
+    content: "\e974";
+}
+
+.ms-devices2::before {
+    content: "\e975";
+}
+
+.ms-p-c1::before {
+    content: "\e977";
+}
+
+.ms-presence-chicklet-video::before {
+    content: "\e979";
+}
+
+.ms-reply::before {
+    content: "\e97a";
+}
+
+.ms-half-alpha::before {
+    content: "\e97e";
+}
+
+.ms-construction-cone::before {
+    content: "\e98f";
+}
+
+.ms-double-chevron-left-med::before {
+    content: "\e991";
+}
+
+.ms-volume0::before {
+    content: "\e992";
+}
+
+.ms-volume1::before {
+    content: "\e993";
+}
+
+.ms-volume2::before {
+    content: "\e994";
+}
+
+.ms-volume3::before {
+    content: "\e995";
+}
+
+.ms-chart::before {
+    content: "\e999";
+}
+
+.ms-robot::before {
+    content: "\e99a";
+}
+
+.ms-manufacturing::before {
+    content: "\e99c";
+}
+
+.ms-lock-solid::before {
+    content: "\e9a2";
+}
+
+.ms-fit-page::before {
+    content: "\e9a6";
+}
+
+.ms-fit-width::before {
+    content: "\e9a7";
+}
+
+.ms-bidi-ltr::before {
+    content: "\e9aa";
+}
+
+.ms-bidi-rtl::before {
+    content: "\e9ab";
+}
+
+.ms-right-double-quote::before {
+    content: "\e9b1";
+}
+
+.ms-sunny::before {
+    content: "\e9bd";
+}
+
+.ms-cloud-weather::before {
+    content: "\e9be";
+}
+
+.ms-cloudy::before {
+    content: "\e9bf";
+}
+
+.ms-partly-cloudy-day::before {
+    content: "\e9c0";
+}
+
+.ms-partly-cloudy-night::before {
+    content: "\e9c1";
+}
+
+.ms-clear-night::before {
+    content: "\e9c2";
+}
+
+.ms-rain-showers-day::before {
+    content: "\e9c3";
+}
+
+.ms-rain::before {
+    content: "\e9c4";
+}
+
+.ms-thunderstorms::before {
+    content: "\e9c6";
+}
+
+.ms-rain-snow::before {
+    content: "\e9c7";
+}
+
+.ms-snow::before {
+    content: "\e9c8";
+}
+
+.ms-blowing-snow::before {
+    content: "\e9c9";
+}
+
+.ms-frigid::before {
+    content: "\e9ca";
+}
+
+.ms-fog::before {
+    content: "\e9cb";
+}
+
+.ms-squalls::before {
+    content: "\e9cc";
+}
+
+.ms-duststorm::before {
+    content: "\e9cd";
+}
+
+.ms-unknown::before {
+    content: "\e9ce";
+}
+
+.ms-precipitation::before {
+    content: "\e9cf";
+}
+
+.ms-sort-lines::before {
+    content: "\e9d0";
+}
+
+.ms-ribbon::before {
+    content: "\e9d1";
+}
+
+.ms-area-chart::before {
+    content: "\e9d2";
+}
+
+.ms-assign::before {
+    content: "\e9d3";
+}
+
+.ms-flow-chart::before {
+    content: "\e9d4";
+}
+
+.ms-check-list::before {
+    content: "\e9d5";
+}
+
+.ms-diagnostic::before {
+    content: "\e9d9";
+}
+
+.ms-generate::before {
+    content: "\e9da";
+}
+
+.ms-line-chart::before {
+    content: "\e9e6";
+}
+
+.ms-equalizer::before {
+    content: "\e9e9";
+}
+
+.ms-bar-chart-horizontal::before {
+    content: "\e9eb";
+}
+
+.ms-bar-chart-vertical::before {
+    content: "\e9ec";
+}
+
+.ms-freezing::before {
+    content: "\e9ef";
+}
+
+.ms-funnel-chart::before {
+    content: "\e9f1";
+}
+
+.ms-processing::before {
+    content: "\e9f5";
+}
+
+.ms-quantity::before {
+    content: "\e9f8";
+}
+
+.ms-report-document::before {
+    content: "\e9f9";
+}
+
+.ms-stack-column-chart::before {
+    content: "\e9fc";
+}
+
+.ms-snow-shower-day::before {
+    content: "\e9fd";
+}
+
+.ms-hail-day::before {
+    content: "\ea00";
+}
+
+.ms-work-flow::before {
+    content: "\ea01";
+}
+
+.ms-hour-glass::before {
+    content: "\ea03";
+}
+
+.ms-store-logo-med20::before {
+    content: "\ea04";
+}
+
+.ms-time-sheet::before {
+    content: "\ea05";
+}
+
+.ms-triangle-solid::before {
+    content: "\ea08";
+}
+
+.ms-upgrade-analysis::before {
+    content: "\ea0b";
+}
+
+.ms-video-solid::before {
+    content: "\ea0c";
+}
+
+.ms-rain-showers-night::before {
+    content: "\ea0f";
+}
+
+.ms-snow-shower-night::before {
+    content: "\ea11";
+}
+
+.ms-teamwork::before {
+    content: "\ea12";
+}
+
+.ms-hail-night::before {
+    content: "\ea13";
+}
+
+.ms-people-add::before {
+    content: "\ea15";
+}
+
+.ms-glasses::before {
+    content: "\ea16";
+}
+
+.ms-date-time2::before {
+    content: "\ea17";
+}
+
+.ms-shield::before {
+    content: "\ea18";
+}
+
+.ms-header1::before {
+    content: "\ea19";
+}
+
+.ms-page-add::before {
+    content: "\ea1a";
+}
+
+.ms-numbered-list::before {
+    content: "\ea1c";
+}
+
+.ms-power-b-i-logo::before {
+    content: "\ea1e";
+}
+
+.ms-info2::before {
+    content: "\ea1f";
+}
+
+.ms-music-in-collection-fill::before {
+    content: "\ea36";
+}
+
+.ms-list::before {
+    content: "\ea37";
+}
+
+.ms-asterisk::before {
+    content: "\ea38";
+}
+
+.ms-error-badge::before {
+    content: "\ea39";
+}
+
+.ms-circle-ring::before {
+    content: "\ea3a";
+}
+
+.ms-circle-fill::before {
+    content: "\ea3b";
+}
+
+.ms-record2::before {
+    content: "\ea3f";
+}
+
+.ms-all-apps-mirrored::before {
+    content: "\ea40";
+}
+
+.ms-bookmarks-mirrored::before {
+    content: "\ea41";
+}
+
+.ms-bulleted-list-mirrored::before {
+    content: "\ea42";
+}
+
+.ms-caret-hollow-mirrored::before {
+    content: "\ea45";
+}
+
+.ms-caret-solid-mirrored::before {
+    content: "\ea46";
+}
+
+.ms-chrome-back-mirrored::before {
+    content: "\ea47";
+}
+
+.ms-close-pane-mirrored::before {
+    content: "\ea49";
+}
+
+.ms-dock-left-mirrored::before {
+    content: "\ea4c";
+}
+
+.ms-double-chevron-left-med-mirrored::before {
+    content: "\ea4d";
+}
+
+.ms-go-mirrored::before {
+    content: "\ea4f";
+}
+
+.ms-help-mirrored::before {
+    content: "\ea51";
+}
+
+.ms-import-mirrored::before {
+    content: "\ea52";
+}
+
+.ms-import-all-mirrored::before {
+    content: "\ea53";
+}
+
+.ms-list-mirrored::before {
+    content: "\ea55";
+}
+
+.ms-mail-forward-mirrored::before {
+    content: "\ea56";
+}
+
+.ms-mail-reply-mirrored::before {
+    content: "\ea57";
+}
+
+.ms-mail-reply-all-mirrored::before {
+    content: "\ea58";
+}
+
+.ms-mini-contract-mirrored::before {
+    content: "\ea59";
+}
+
+.ms-mini-expand-mirrored::before {
+    content: "\ea5a";
+}
+
+.ms-open-pane-mirrored::before {
+    content: "\ea5b";
+}
+
+.ms-parking-location-mirrored::before {
+    content: "\ea5e";
+}
+
+.ms-send-mirrored::before {
+    content: "\ea63";
+}
+
+.ms-show-results-mirrored::before {
+    content: "\ea65";
+}
+
+.ms-thumbnail-view-mirrored::before {
+    content: "\ea67";
+}
+
+.ms-media::before {
+    content: "\ea69";
+}
+
+.ms-devices3::before {
+    content: "\ea6c";
+}
+
+.ms-focus::before {
+    content: "\ea6f";
+}
+
+.ms-video-light-off::before {
+    content: "\ea74";
+}
+
+.ms-lightbulb::before {
+    content: "\ea80";
+}
+
+.ms-status-triangle::before {
+    content: "\ea82";
+}
+
+.ms-volume-disabled::before {
+    content: "\ea85";
+}
+
+.ms-puzzle::before {
+    content: "\ea86";
+}
+
+.ms-emoji-neutral::before {
+    content: "\ea87";
+}
+
+.ms-emoji-disappointed::before {
+    content: "\ea88";
+}
+
+.ms-home-solid::before {
+    content: "\ea8a";
+}
+
+.ms-ringer::before {
+    content: "\ea8f";
+}
+
+.ms-p-d-f::before {
+    content: "\ea90";
+}
+
+.ms-heart-broken::before {
+    content: "\ea92";
+}
+
+.ms-store-logo16::before {
+    content: "\ea96";
+}
+
+.ms-multi-select-mirrored::before {
+    content: "\ea98";
+}
+
+.ms-broom::before {
+    content: "\ea99";
+}
+
+.ms-cocktails::before {
+    content: "\ea9d";
+}
+
+.ms-wines::before {
+    content: "\eabf";
+}
+
+.ms-articles::before {
+    content: "\eac1";
+}
+
+.ms-cycling::before {
+    content: "\eac7";
+}
+
+.ms-diet-plan-notebook::before {
+    content: "\eac8";
+}
+
+.ms-pill::before {
+    content: "\eacb";
+}
+
+.ms-exercise-tracker::before {
+    content: "\eacc";
+}
+
+.ms-hands-free::before {
+    content: "\ead0";
+}
+
+.ms-medical::before {
+    content: "\ead4";
+}
+
+.ms-running::before {
+    content: "\eada";
+}
+
+.ms-weights::before {
+    content: "\eadb";
+}
+
+.ms-trackers::before {
+    content: "\eadf";
+}
+
+.ms-add-notes::before {
+    content: "\eae3";
+}
+
+.ms-all-currency::before {
+    content: "\eae4";
+}
+
+.ms-bar-chart4::before {
+    content: "\eae7";
+}
+
+.ms-circle-plus::before {
+    content: "\eaee";
+}
+
+.ms-coffee::before {
+    content: "\eaef";
+}
+
+.ms-cotton::before {
+    content: "\eaf3";
+}
+
+.ms-market::before {
+    content: "\eafc";
+}
+
+.ms-money::before {
+    content: "\eafd";
+}
+
+.ms-pie-double::before {
+    content: "\eb04";
+}
+
+.ms-pie-single::before {
+    content: "\eb05";
+}
+
+.ms-remove-filter::before {
+    content: "\eb08";
+}
+
+.ms-savings::before {
+    content: "\eb0b";
+}
+
+.ms-sell::before {
+    content: "\eb0c";
+}
+
+.ms-stock-down::before {
+    content: "\eb0f";
+}
+
+.ms-stock-up::before {
+    content: "\eb11";
+}
+
+.ms-lamp::before {
+    content: "\eb19";
+}
+
+.ms-source::before {
+    content: "\eb1b";
+}
+
+.ms-m-s-n-videos::before {
+    content: "\eb1c";
+}
+
+.ms-cricket::before {
+    content: "\eb1e";
+}
+
+.ms-golf::before {
+    content: "\eb1f";
+}
+
+.ms-baseball::before {
+    content: "\eb20";
+}
+
+.ms-soccer::before {
+    content: "\eb21";
+}
+
+.ms-more-sports::before {
+    content: "\eb22";
+}
+
+.ms-auto-racing::before {
+    content: "\eb24";
+}
+
+.ms-college-hoops::before {
+    content: "\eb25";
+}
+
+.ms-college-football::before {
+    content: "\eb26";
+}
+
+.ms-pro-football::before {
+    content: "\eb27";
+}
+
+.ms-pro-hockey::before {
+    content: "\eb28";
+}
+
+.ms-rugby::before {
+    content: "\eb2d";
+}
+
+.ms-substitutions-in::before {
+    content: "\eb31";
+}
+
+.ms-tennis::before {
+    content: "\eb33";
+}
+
+.ms-arrivals::before {
+    content: "\eb34";
+}
+
+.ms-design::before {
+    content: "\eb3c";
+}
+
+.ms-website::before {
+    content: "\eb41";
+}
+
+.ms-drop::before {
+    content: "\eb42";
+}
+
+.ms-historical-weather::before {
+    content: "\eb43";
+}
+
+.ms-ski-resorts::before {
+    content: "\eb45";
+}
+
+.ms-snowflake::before {
+    content: "\eb46";
+}
+
+.ms-bus-solid::before {
+    content: "\eb47";
+}
+
+.ms-ferry-solid::before {
+    content: "\eb48";
+}
+
+.ms-airplane-solid::before {
+    content: "\eb4c";
+}
+
+.ms-train-solid::before {
+    content: "\eb4d";
+}
+
+.ms-heart::before {
+    content: "\eb51";
+}
+
+.ms-heart-fill::before {
+    content: "\eb52";
+}
+
+.ms-ticket::before {
+    content: "\eb54";
+}
+
+.ms-wifi-warning4::before {
+    content: "\eb63";
+}
+
+.ms-devices4::before {
+    content: "\eb66";
+}
+
+.ms-azure-logo::before {
+    content: "\eb6a";
+}
+
+.ms-bing-logo::before {
+    content: "\eb6b";
+}
+
+.ms-m-s-n-logo::before {
+    content: "\eb6c";
+}
+
+.ms-outlook-logo-inverse::before {
+    content: "\eb6d";
+}
+
+.ms-office-logo::before {
+    content: "\eb6e";
+}
+
+.ms-skype-logo::before {
+    content: "\eb6f";
+}
+
+.ms-door::before {
+    content: "\eb75";
+}
+
+.ms-edit-mirrored::before {
+    content: "\eb7e";
+}
+
+.ms-gift-card::before {
+    content: "\eb8e";
+}
+
+.ms-double-bookmark::before {
+    content: "\eb8f";
+}
+
+.ms-status-error-full::before {
+    content: "\eb90";
+}
+
+.ms-certificate::before {
+    content: "\eb95";
+}
+
+.ms-fast-forward::before {
+    content: "\eb9d";
+}
+
+.ms-rewind::before {
+    content: "\eb9e";
+}
+
+.ms-photo2::before {
+    content: "\eb9f";
+}
+
+.ms-open-source::before {
+    content: "\ebc2";
+}
+
+.ms-movers::before {
+    content: "\ebcd";
+}
+
+.ms-cloud-download::before {
+    content: "\ebd3";
+}
+
+.ms-family::before {
+    content: "\ebda";
+}
+
+.ms-wind-direction::before {
+    content: "\ebe6";
+}
+
+.ms-bug::before {
+    content: "\ebe8";
+}
+
+.ms-site-scan::before {
+    content: "\ebec";
+}
+
+.ms-browser-screen-shot::before {
+    content: "\ebed";
+}
+
+.ms-f12-dev-tools::before {
+    content: "\ebee";
+}
+
+.ms-c-s-s::before {
+    content: "\ebef";
+}
+
+.ms-j-s::before {
+    content: "\ebf0";
+}
+
+.ms-delivery-truck::before {
+    content: "\ebf4";
+}
+
+.ms-reminder-person::before {
+    content: "\ebf7";
+}
+
+.ms-reminder-group::before {
+    content: "\ebf8";
+}
+
+.ms-tablet-mode::before {
+    content: "\ebfc";
+}
+
+.ms-umbrella::before {
+    content: "\ec04";
+}
+
+.ms-network-tower::before {
+    content: "\ec05";
+}
+
+.ms-city-next::before {
+    content: "\ec06";
+}
+
+.ms-city-next2::before {
+    content: "\ec07";
+}
+
+.ms-section::before {
+    content: "\ec0c";
+}
+
+.ms-one-note-logo-inverse::before {
+    content: "\ec0d";
+}
+
+.ms-toggle-filled::before {
+    content: "\ec11";
+}
+
+.ms-toggle-border::before {
+    content: "\ec12";
+}
+
+.ms-slider-thumb::before {
+    content: "\ec13";
+}
+
+.ms-toggle-thumb::before {
+    content: "\ec14";
+}
+
+.ms-miracast-logo-large::before {
+    content: "\ec16";
+}
+
+.ms-documentation::before {
+    content: "\ec17";
+}
+
+.ms-badge::before {
+    content: "\ec1b";
+}
+
+.ms-giftbox::before {
+    content: "\ec1f";
+}
+
+.ms-visual-studio-logo::before {
+    content: "\ec22";
+}
+
+.ms-home-group::before {
+    content: "\ec26";
+}
+
+.ms-excel-logo-inverse::before {
+    content: "\ec28";
+}
+
+.ms-word-logo-inverse::before {
+    content: "\ec29";
+}
+
+.ms-power-point-logo-inverse::before {
+    content: "\ec2a";
+}
+
+.ms-cafe::before {
+    content: "\ec32";
+}
+
+.ms-speed-high::before {
+    content: "\ec4a";
+}
+
+.ms-commitments::before {
+    content: "\ec4d";
+}
+
+.ms-this-p-c::before {
+    content: "\ec4e";
+}
+
+.ms-music-note::before {
+    content: "\ec4f";
+}
+
+.ms-mic-off::before {
+    content: "\ec54";
+}
+
+.ms-edge-logo::before {
+    content: "\ec60";
+}
+
+.ms-completed-solid::before {
+    content: "\ec61";
+}
+
+.ms-album-remove::before {
+    content: "\ec62";
+}
+
+.ms-message-fill::before {
+    content: "\ec70";
+}
+
+.ms-tablet-selected::before {
+    content: "\ec74";
+}
+
+.ms-mobile-selected::before {
+    content: "\ec75";
+}
+
+.ms-laptop-selected::before {
+    content: "\ec76";
+}
+
+.ms-t-v-monitor-selected::before {
+    content: "\ec77";
+}
+
+.ms-developer-tools::before {
+    content: "\ec7a";
+}
+
+.ms-shapes::before {
+    content: "\ec7c";
+}
+
+.ms-insert-text-box::before {
+    content: "\ec7d";
+}
+
+.ms-lower-brightness::before {
+    content: "\ec8a";
+}
+
+.ms-web-components::before {
+    content: "\ec8b";
+}
+
+.ms-offline-storage::before {
+    content: "\ec8c";
+}
+
+.ms-d-o-m::before {
+    content: "\ec8d";
+}
+
+.ms-cloud-upload::before {
+    content: "\ec8e";
+}
+
+.ms-scroll-up-down::before {
+    content: "\ec8f";
+}
+
+.ms-date-time::before {
+    content: "\ec92";
+}
+
+.ms-event::before {
+    content: "\eca3";
+}
+
+.ms-cake::before {
+    content: "\eca4";
+}
+
+.ms-tiles::before {
+    content: "\eca5";
+}
+
+.ms-org::before {
+    content: "\eca6";
+}
+
+.ms-party-leader::before {
+    content: "\eca7";
+}
+
+.ms-d-r-m::before {
+    content: "\eca8";
+}
+
+.ms-cloud-add::before {
+    content: "\eca9";
+}
+
+.ms-app-icon-default::before {
+    content: "\ecaa";
+}
+
+.ms-photo2-add::before {
+    content: "\ecab";
+}
+
+.ms-photo2-remove::before {
+    content: "\ecac";
+}
+
+.ms-p-o-i::before {
+    content: "\ecaf";
+}
+
+.ms-facebook-logo::before {
+    content: "\ecb3";
+}
+
+.ms-add-to::before {
+    content: "\ecc8";
+}
+
+.ms-radio-btn-off::before {
+    content: "\ecca";
+}
+
+.ms-radio-btn-on::before {
+    content: "\eccb";
+}
+
+.ms-explore-content::before {
+    content: "\eccd";
+}
+
+.ms-embed::before {
+    content: "\ecce";
+}
+
+.ms-product::before {
+    content: "\ecdc";
+}
+
+.ms-progress-loop-inner::before {
+    content: "\ecde";
+}
+
+.ms-progress-loop-outer::before {
+    content: "\ecdf";
+}
+
+.ms-blocked2::before {
+    content: "\ece4";
+}
+
+.ms-fang-body::before {
+    content: "\eceb";
+}
+
+.ms-page-header::before {
+    content: "\ecee";
+}
+
+.ms-glimmer::before {
+    content: "\ecf4";
+}
+
+.ms-chat-invite-friend::before {
+    content: "\ecfe";
+}
+
+.ms-brush::before {
+    content: "\ecff";
+}
+
+.ms-shirt::before {
+    content: "\ed00";
+}
+
+.ms-crown::before {
+    content: "\ed01";
+}
+
+.ms-diamond::before {
+    content: "\ed02";
+}
+
+.ms-scale-up::before {
+    content: "\ed09";
+}
+
+.ms-q-r-code::before {
+    content: "\ed14";
+}
+
+.ms-feedback::before {
+    content: "\ed15";
+}
+
+.ms-sharepoint-logo-inverse::before {
+    content: "\ed18";
+}
+
+.ms-yammer-logo::before {
+    content: "\ed19";
+}
+
+.ms-hide::before {
+    content: "\ed1a";
+}
+
+.ms-uneditable::before {
+    content: "\ed1d";
+}
+
+.ms-return-to-session::before {
+    content: "\ed24";
+}
+
+.ms-open-folder-horizontal::before {
+    content: "\ed25";
+}
+
+.ms-calendar-mirrored::before {
+    content: "\ed28";
+}
+
+.ms-sway-logo-inverse::before {
+    content: "\ed29";
+}
+
+.ms-out-of-office::before {
+    content: "\ed34";
+}
+
+.ms-trophy::before {
+    content: "\ed3f";
+}
+
+.ms-reopen-pages::before {
+    content: "\ed50";
+}
+
+.ms-emoji-tab-symbols::before {
+    content: "\ed58";
+}
+
+.ms-a-a-d-logo::before {
+    content: "\ed68";
+}
+
+.ms-access-logo::before {
+    content: "\ed69";
+}
+
+.ms-admin-a-logo-inverse32::before {
+    content: "\ed6a";
+}
+
+.ms-admin-c-logo-inverse32::before {
+    content: "\ed6b";
+}
+
+.ms-admin-d-logo-inverse32::before {
+    content: "\ed6c";
+}
+
+.ms-admin-e-logo-inverse32::before {
+    content: "\ed6d";
+}
+
+.ms-admin-l-logo-inverse32::before {
+    content: "\ed6e";
+}
+
+.ms-admin-m-logo-inverse32::before {
+    content: "\ed6f";
+}
+
+.ms-admin-o-logo-inverse32::before {
+    content: "\ed70";
+}
+
+.ms-admin-p-logo-inverse32::before {
+    content: "\ed71";
+}
+
+.ms-admin-s-logo-inverse32::before {
+    content: "\ed72";
+}
+
+.ms-admin-y-logo-inverse32::before {
+    content: "\ed73";
+}
+
+.ms-box-logo::before {
+    content: "\ed75";
+}
+
+.ms-delve-logo-inverse::before {
+    content: "\ed76";
+}
+
+.ms-dropbox-logo::before {
+    content: "\ed77";
+}
+
+.ms-exchange-logo-inverse::before {
+    content: "\ed78";
+}
+
+.ms-lync-logo::before {
+    content: "\ed79";
+}
+
+.ms-office-video-logo-inverse::before {
+    content: "\ed7a";
+}
+
+.ms-parature-logo::before {
+    content: "\ed7b";
+}
+
+.ms-social-listening-logo::before {
+    content: "\ed7c";
+}
+
+.ms-visio-logo-inverse::before {
+    content: "\ed7d";
+}
+
+.ms-balloons::before {
+    content: "\ed7e";
+}
+
+.ms-cat::before {
+    content: "\ed7f";
+}
+
+.ms-mail-alert::before {
+    content: "\ed80";
+}
+
+.ms-mail-check::before {
+    content: "\ed81";
+}
+
+.ms-mail-low-importance::before {
+    content: "\ed82";
+}
+
+.ms-mail-pause::before {
+    content: "\ed83";
+}
+
+.ms-mail-repeat::before {
+    content: "\ed84";
+}
+
+.ms-security-group::before {
+    content: "\ed85";
+}
+
+.ms-table::before {
+    content: "\ed86";
+}
+
+.ms-voicemail-forward::before {
+    content: "\ed87";
+}
+
+.ms-voicemail-reply::before {
+    content: "\ed88";
+}
+
+.ms-waffle::before {
+    content: "\ed89";
+}
+
+.ms-remove-event::before {
+    content: "\ed8a";
+}
+
+.ms-event-info::before {
+    content: "\ed8b";
+}
+
+.ms-forward-event::before {
+    content: "\ed8c";
+}
+
+.ms-wipe-phone::before {
+    content: "\ed8d";
+}
+
+.ms-add-online-meeting::before {
+    content: "\ed8e";
+}
+
+.ms-join-online-meeting::before {
+    content: "\ed8f";
+}
+
+.ms-remove-link::before {
+    content: "\ed90";
+}
+
+.ms-people-block::before {
+    content: "\ed91";
+}
+
+.ms-people-repeat::before {
+    content: "\ed92";
+}
+
+.ms-people-alert::before {
+    content: "\ed93";
+}
+
+.ms-people-pause::before {
+    content: "\ed94";
+}
+
+.ms-transfer-call::before {
+    content: "\ed95";
+}
+
+.ms-add-phone::before {
+    content: "\ed96";
+}
+
+.ms-unknown-call::before {
+    content: "\ed97";
+}
+
+.ms-note-reply::before {
+    content: "\ed98";
+}
+
+.ms-note-forward::before {
+    content: "\ed99";
+}
+
+.ms-note-pinned::before {
+    content: "\ed9a";
+}
+
+.ms-remove-occurrence::before {
+    content: "\ed9b";
+}
+
+.ms-timeline::before {
+    content: "\ed9c";
+}
+
+.ms-edit-note::before {
+    content: "\ed9d";
+}
+
+.ms-circle-half-full::before {
+    content: "\ed9e";
+}
+
+.ms-room::before {
+    content: "\ed9f";
+}
+
+.ms-unsubscribe::before {
+    content: "\eda0";
+}
+
+.ms-subscribe::before {
+    content: "\eda1";
+}
+
+.ms-hard-drive::before {
+    content: "\eda2";
+}
+
+.ms-recurring-task::before {
+    content: "\edb2";
+}
+
+.ms-task-manager::before {
+    content: "\edb7";
+}
+
+.ms-task-manager-mirrored::before {
+    content: "\edb8";
+}
+
+.ms-combine::before {
+    content: "\edbb";
+}
+
+.ms-split::before {
+    content: "\edbc";
+}
+
+.ms-double-chevron-up::before {
+    content: "\edbd";
+}
+
+.ms-double-chevron-left::before {
+    content: "\edbe";
+}
+
+.ms-double-chevron-right::before {
+    content: "\edbf";
+}
+
+.ms-ascending::before {
+    content: "\edc0";
+}
+
+.ms-descending::before {
+    content: "\edc1";
+}
+
+.ms-text-box::before {
+    content: "\edc2";
+}
+
+.ms-text-field::before {
+    content: "\edc3";
+}
+
+.ms-number-field::before {
+    content: "\edc4";
+}
+
+.ms-dropdown::before {
+    content: "\edc5";
+}
+
+.ms-pen-workspace::before {
+    content: "\edc6";
+}
+
+.ms-bookings-logo::before {
+    content: "\edc7";
+}
+
+.ms-class-notebook-logo-inverse::before {
+    content: "\edc8";
+}
+
+.ms-delve-analytics-logo::before {
+    content: "\edca";
+}
+
+.ms-docs-logo-inverse::before {
+    content: "\edcb";
+}
+
+.ms-dynamics365-logo::before {
+    content: "\edcc";
+}
+
+.ms-dynamic-s-m-b-logo::before {
+    content: "\edcd";
+}
+
+.ms-office-assistant-logo::before {
+    content: "\edce";
+}
+
+.ms-office-store-logo::before {
+    content: "\edcf";
+}
+
+.ms-one-note-edu-logo-inverse::before {
+    content: "\edd0";
+}
+
+.ms-planner-logo::before {
+    content: "\edd1";
+}
+
+.ms-power-apps::before {
+    content: "\edd2";
+}
+
+.ms-suitcase::before {
+    content: "\edd3";
+}
+
+.ms-project-logo-inverse::before {
+    content: "\edd4";
+}
+
+.ms-caret-left8::before {
+    content: "\edd5";
+}
+
+.ms-caret-right8::before {
+    content: "\edd6";
+}
+
+.ms-caret-up8::before {
+    content: "\edd7";
+}
+
+.ms-caret-down8::before {
+    content: "\edd8";
+}
+
+.ms-caret-left-solid8::before {
+    content: "\edd9";
+}
+
+.ms-caret-right-solid8::before {
+    content: "\edda";
+}
+
+.ms-caret-up-solid8::before {
+    content: "\eddb";
+}
+
+.ms-caret-down-solid8::before {
+    content: "\eddc";
+}
+
+.ms-clear-formatting::before {
+    content: "\eddd";
+}
+
+.ms-superscript::before {
+    content: "\edde";
+}
+
+.ms-subscript::before {
+    content: "\eddf";
+}
+
+.ms-strikethrough::before {
+    content: "\ede0";
+}
+
+.ms-export::before {
+    content: "\ede1";
+}
+
+.ms-export-mirrored::before {
+    content: "\ede2";
+}
+
+.ms-single-bookmark::before {
+    content: "\edff";
+}
+
+.ms-single-bookmark-solid::before {
+    content: "\ee00";
+}
+
+.ms-double-chevron-down::before {
+    content: "\ee04";
+}
+
+.ms-follow-user::before {
+    content: "\ee05";
+}
+
+.ms-reply-all::before {
+    content: "\ee0a";
+}
+
+.ms-google-drive-logo::before {
+    content: "\ee0b";
+}
+
+.ms-workforce-management::before {
+    content: "\ee0f";
+}
+
+.ms-recruitment-management::before {
+    content: "\ee12";
+}
+
+.ms-questionnaire::before {
+    content: "\ee19";
+}
+
+.ms-manager-self-service::before {
+    content: "\ee23";
+}
+
+.ms-product-release::before {
+    content: "\ee2e";
+}
+
+.ms-reply-mirrored::before {
+    content: "\ee35";
+}
+
+.ms-reply-all-mirrored::before {
+    content: "\ee36";
+}
+
+.ms-medal::before {
+    content: "\ee38";
+}
+
+.ms-add-group::before {
+    content: "\ee3d";
+}
+
+.ms-questionnaire-mirrored::before {
+    content: "\ee4b";
+}
+
+.ms-temporary-user::before {
+    content: "\ee58";
+}
+
+.ms-caret-solid16::before {
+    content: "\ee62";
+}
+
+.ms-grouped-descending::before {
+    content: "\ee66";
+}
+
+.ms-grouped-ascending::before {
+    content: "\ee67";
+}
+
+.ms-sort-up::before {
+    content: "\ee68";
+}
+
+.ms-sort-down::before {
+    content: "\ee69";
+}
+
+.ms-away-status::before {
+    content: "\ee6a";
+}
+
+.ms-my-movies-t-v::before {
+    content: "\ee6c";
+}
+
+.ms-sync-to-p-c::before {
+    content: "\ee6e";
+}
+
+.ms-generic-scan::before {
+    content: "\ee6f";
+}
+
+.ms-australian-rules::before {
+    content: "\ee70";
+}
+
+.ms-wifi-ethernet::before {
+    content: "\ee77";
+}
+
+.ms-trackers-mirrored::before {
+    content: "\ee92";
+}
+
+.ms-date-time-mirrored::before {
+    content: "\ee93";
+}
+
+.ms-stop-solid::before {
+    content: "\ee95";
+}
+
+.ms-double-chevron-up12::before {
+    content: "\ee96";
+}
+
+.ms-double-chevron-down12::before {
+    content: "\ee97";
+}
+
+.ms-double-chevron-left12::before {
+    content: "\ee98";
+}
+
+.ms-double-chevron-right12::before {
+    content: "\ee99";
+}
+
+.ms-calendar-agenda::before {
+    content: "\ee9a";
+}
+
+.ms-add-event::before {
+    content: "\eeb5";
+}
+
+.ms-asset-library::before {
+    content: "\eeb6";
+}
+
+.ms-data-connection-library::before {
+    content: "\eeb7";
+}
+
+.ms-doc-library::before {
+    content: "\eeb8";
+}
+
+.ms-form-library::before {
+    content: "\eeb9";
+}
+
+.ms-form-library-mirrored::before {
+    content: "\eeba";
+}
+
+.ms-report-library::before {
+    content: "\eebb";
+}
+
+.ms-report-library-mirrored::before {
+    content: "\eebc";
+}
+
+.ms-contact-card::before {
+    content: "\eebd";
+}
+
+.ms-custom-list::before {
+    content: "\eebe";
+}
+
+.ms-custom-list-mirrored::before {
+    content: "\eebf";
+}
+
+.ms-issue-tracking::before {
+    content: "\eec0";
+}
+
+.ms-issue-tracking-mirrored::before {
+    content: "\eec1";
+}
+
+.ms-picture-library::before {
+    content: "\eec2";
+}
+
+.ms-office-addins-logo::before {
+    content: "\eec7";
+}
+
+.ms-offline-one-drive-parachute::before {
+    content: "\eec8";
+}
+
+.ms-offline-one-drive-parachute-disabled::before {
+    content: "\eec9";
+}
+
+.ms-large-grid::before {
+    content: "\eecb";
+}
+
+.ms-triangle-solid-up12::before {
+    content: "\eecc";
+}
+
+.ms-triangle-solid-down12::before {
+    content: "\eecd";
+}
+
+.ms-triangle-solid-left12::before {
+    content: "\eece";
+}
+
+.ms-triangle-solid-right12::before {
+    content: "\eecf";
+}
+
+.ms-triangle-up12::before {
+    content: "\eed0";
+}
+
+.ms-triangle-down12::before {
+    content: "\eed1";
+}
+
+.ms-triangle-left12::before {
+    content: "\eed2";
+}
+
+.ms-triangle-right12::before {
+    content: "\eed3";
+}
+
+.ms-arrow-up-right8::before {
+    content: "\eed4";
+}
+
+.ms-arrow-down-right8::before {
+    content: "\eed5";
+}
+
+.ms-document-set::before {
+    content: "\eed6";
+}
+
+.ms-delve-analytics::before {
+    content: "\eeee";
+}
+
+.ms-arrow-up-right-mirrored8::before {
+    content: "\eeef";
+}
+
+.ms-arrow-down-right-mirrored8::before {
+    content: "\eef0";
+}
+
+.ms-company-directory::before {
+    content: "\ef0d";
+}
+
+.ms-open-enrollment::before {
+    content: "\ef1c";
+}
+
+.ms-company-directory-mirrored::before {
+    content: "\ef2b";
+}
+
+.ms-one-drive-add::before {
+    content: "\ef32";
+}
+
+.ms-profile-search::before {
+    content: "\ef35";
+}
+
+.ms-header2::before {
+    content: "\ef36";
+}
+
+.ms-header3::before {
+    content: "\ef37";
+}
+
+.ms-header4::before {
+    content: "\ef38";
+}
+
+.ms-eyedropper::before {
+    content: "\ef3c";
+}
+
+.ms-market-down::before {
+    content: "\ef42";
+}
+
+.ms-calendar-work-week::before {
+    content: "\ef51";
+}
+
+.ms-side-panel::before {
+    content: "\ef52";
+}
+
+.ms-globe-favorite::before {
+    content: "\ef53";
+}
+
+.ms-caret-top-left-solid8::before {
+    content: "\ef54";
+}
+
+.ms-caret-top-right-solid8::before {
+    content: "\ef55";
+}
+
+.ms-view-all2::before {
+    content: "\ef56";
+}
+
+.ms-document-reply::before {
+    content: "\ef57";
+}
+
+.ms-player-settings::before {
+    content: "\ef58";
+}
+
+.ms-receipt-forward::before {
+    content: "\ef59";
+}
+
+.ms-receipt-reply::before {
+    content: "\ef5a";
+}
+
+.ms-receipt-check::before {
+    content: "\ef5b";
+}
+
+.ms-fax::before {
+    content: "\ef5c";
+}
+
+.ms-recurring-event::before {
+    content: "\ef5d";
+}
+
+.ms-reply-alt::before {
+    content: "\ef5e";
+}
+
+.ms-reply-all-alt::before {
+    content: "\ef5f";
+}
+
+.ms-edit-style::before {
+    content: "\ef60";
+}
+
+.ms-edit-mail::before {
+    content: "\ef61";
+}
+
+.ms-lifesaver::before {
+    content: "\ef62";
+}
+
+.ms-lifesaver-lock::before {
+    content: "\ef63";
+}
+
+.ms-inbox-check::before {
+    content: "\ef64";
+}
+
+.ms-folder-search::before {
+    content: "\ef65";
+}
+
+.ms-collapse-menu::before {
+    content: "\ef66";
+}
+
+.ms-expand-menu::before {
+    content: "\ef67";
+}
+
+.ms-boards::before {
+    content: "\ef68";
+}
+
+.ms-sun-add::before {
+    content: "\ef69";
+}
+
+.ms-sun-question-mark::before {
+    content: "\ef6a";
+}
+
+.ms-landscape-orientation::before {
+    content: "\ef6b";
+}
+
+.ms-document-search::before {
+    content: "\ef6c";
+}
+
+.ms-public-calendar::before {
+    content: "\ef6d";
+}
+
+.ms-public-contact-card::before {
+    content: "\ef6e";
+}
+
+.ms-public-email::before {
+    content: "\ef6f";
+}
+
+.ms-public-folder::before {
+    content: "\ef70";
+}
+
+.ms-word-document::before {
+    content: "\ef71";
+}
+
+.ms-power-point-document::before {
+    content: "\ef72";
+}
+
+.ms-excel-document::before {
+    content: "\ef73";
+}
+
+.ms-grouped-list::before {
+    content: "\ef74";
+}
+
+.ms-classroom-logo::before {
+    content: "\ef75";
+}
+
+.ms-sections::before {
+    content: "\ef76";
+}
+
+.ms-edit-photo::before {
+    content: "\ef77";
+}
+
+.ms-starburst::before {
+    content: "\ef78";
+}
+
+.ms-sharei-o-s::before {
+    content: "\ef79";
+}
+
+.ms-air-tickets::before {
+    content: "\ef7a";
+}
+
+.ms-pencil-reply::before {
+    content: "\ef7b";
+}
+
+.ms-tiles2::before {
+    content: "\ef7c";
+}
+
+.ms-skype-circle-check::before {
+    content: "\ef7d";
+}
+
+.ms-skype-circle-clock::before {
+    content: "\ef7e";
+}
+
+.ms-skype-circle-minus::before {
+    content: "\ef7f";
+}
+
+.ms-skype-check::before {
+    content: "\ef80";
+}
+
+.ms-skype-clock::before {
+    content: "\ef81";
+}
+
+.ms-skype-minus::before {
+    content: "\ef82";
+}
+
+.ms-skype-message::before {
+    content: "\ef83";
+}
+
+.ms-closed-caption::before {
+    content: "\ef84";
+}
+
+.ms-a-t-p-logo::before {
+    content: "\ef85";
+}
+
+.ms-office-forms-logo-inverse::before {
+    content: "\ef86";
+}
+
+.ms-recycle-bin::before {
+    content: "\ef87";
+}
+
+.ms-empty-recycle-bin::before {
+    content: "\ef88";
+}
+
+.ms-hide2::before {
+    content: "\ef89";
+}
+
+.ms-i-o-s-app-store-logo::before {
+    content: "\ef8a";
+}
+
+.ms-android-logo::before {
+    content: "\ef8b";
+}
+
+.ms-breadcrumb::before {
+    content: "\ef8c";
+}
+
+.ms-birthday-cake::before {
+    content: "\ef8d";
+}
+
+.ms-clear-filter::before {
+    content: "\ef8f";
+}
+
+.ms-flow::before {
+    content: "\ef90";
+}
+
+.ms-time-entry::before {
+    content: "\ef95";
+}
+
+.ms-c-r-m-processes::before {
+    content: "\efb1";
+}
+
+.ms-page-edit::before {
+    content: "\efb6";
+}
+
+.ms-page-arrow-right::before {
+    content: "\efb8";
+}
+
+.ms-page-remove::before {
+    content: "\efba";
+}
+
+.ms-database::before {
+    content: "\efc7";
+}
+
+.ms-c-r-m-services::before {
+    content: "\efd2";
+}
+
+.ms-edit-contact::before {
+    content: "\efd3";
+}
+
+.ms-connect-contacts::before {
+    content: "\efd4";
+}
+
+.ms-app-icon-default-add::before {
+    content: "\efda";
+}
+
+.ms-app-icon-default-list::before {
+    content: "\efde";
+}
+
+.ms-activate-orders::before {
+    content: "\efe0";
+}
+
+.ms-deactivate-orders::before {
+    content: "\efe1";
+}
+
+.ms-document-management::before {
+    content: "\effc";
+}
+
+.ms-c-r-m-report::before {
+    content: "\effe";
+}
+
+.ms-knowledge-article::before {
+    content: "\f000";
+}
+
+.ms-relationship::before {
+    content: "\f003";
+}
+
+.ms-zip-folder::before {
+    content: "\f012";
+}
+
+.ms-survey-questions::before {
+    content: "\f01b";
+}
+
+.ms-text-document::before {
+    content: "\f029";
+}
+
+.ms-text-document-shared::before {
+    content: "\f02b";
+}
+
+.ms-page-checked-out::before {
+    content: "\f02c";
+}
+
+.ms-save-and-close::before {
+    content: "\f038";
+}
+
+.ms-script::before {
+    content: "\f03a";
+}
+
+.ms-archive::before {
+    content: "\f03f";
+}
+
+.ms-activity-feed::before {
+    content: "\f056";
+}
+
+.ms-event-date::before {
+    content: "\f059";
+}
+
+.ms-arrow-up-right::before {
+    content: "\f069";
+}
+
+.ms-caret-right::before {
+    content: "\f06b";
+}
+
+.ms-set-action::before {
+    content: "\f071";
+}
+
+.ms-caret-solid-left::before {
+    content: "\f08d";
+}
+
+.ms-caret-solid-down::before {
+    content: "\f08e";
+}
+
+.ms-caret-solid-right::before {
+    content: "\f08f";
+}
+
+.ms-caret-solid-up::before {
+    content: "\f090";
+}
+
+.ms-power-apps-logo::before {
+    content: "\f091";
+}
+
+.ms-power-apps2-logo::before {
+    content: "\f092";
+}
+
+.ms-search-issue::before {
+    content: "\f09a";
+}
+
+.ms-search-issue-mirrored::before {
+    content: "\f09b";
+}
+
+.ms-fabric-asset-library::before {
+    content: "\f09c";
+}
+
+.ms-fabric-data-connection-library::before {
+    content: "\f09d";
+}
+
+.ms-fabric-doc-library::before {
+    content: "\f09e";
+}
+
+.ms-fabric-form-library::before {
+    content: "\f09f";
+}
+
+.ms-fabric-form-library-mirrored::before {
+    content: "\f0a0";
+}
+
+.ms-fabric-report-library::before {
+    content: "\f0a1";
+}
+
+.ms-fabric-report-library-mirrored::before {
+    content: "\f0a2";
+}
+
+.ms-fabric-public-folder::before {
+    content: "\f0a3";
+}
+
+.ms-fabric-folder-search::before {
+    content: "\f0a4";
+}
+
+.ms-fabric-moveto-folder::before {
+    content: "\f0a5";
+}
+
+.ms-fabric-unsync-folder::before {
+    content: "\f0a6";
+}
+
+.ms-fabric-sync-folder::before {
+    content: "\f0a7";
+}
+
+.ms-fabric-open-folder-horizontal::before {
+    content: "\f0a8";
+}
+
+.ms-fabric-folder::before {
+    content: "\f0a9";
+}
+
+.ms-fabric-folder-fill::before {
+    content: "\f0aa";
+}
+
+.ms-fabric-new-folder::before {
+    content: "\f0ab";
+}
+
+.ms-fabric-picture-library::before {
+    content: "\f0ac";
+}
+
+.ms-add-favorite::before {
+    content: "\f0c8";
+}
+
+.ms-add-favorite-fill::before {
+    content: "\f0c9";
+}
+
+.ms-buffer-time-before::before {
+    content: "\f0cf";
+}
+
+.ms-buffer-time-after::before {
+    content: "\f0d0";
+}
+
+.ms-buffer-time-both::before {
+    content: "\f0d1";
+}
+
+.ms-publish-content::before {
+    content: "\f0d4";
+}
+
+.ms-canned-chat::before {
+    content: "\f0f2";
+}
+
+.ms-skype-for-business-logo::before {
+    content: "\f0fc";
+}
+
+.ms-tab-center::before {
+    content: "\f100";
+}
+
+.ms-page-checkedin::before {
+    content: "\f104";
+}
+
+.ms-page-list::before {
+    content: "\f106";
+}
+
+.ms-read-out-loud::before {
+    content: "\f112";
+}
+
+.ms-caret-bottom-left-solid8::before {
+    content: "\f121";
+}
+
+.ms-caret-bottom-right-solid8::before {
+    content: "\f122";
+}
+
+.ms-folder-horizontal::before {
+    content: "\f12b";
+}
+
+.ms-microsoft-staffhub-logo::before {
+    content: "\f130";
+}
+
+.ms-giftbox-open::before {
+    content: "\f133";
+}
+
+.ms-status-circle-outer::before {
+    content: "\f136";
+}
+
+.ms-status-circle-inner::before {
+    content: "\f137";
+}
+
+.ms-status-circle-ring::before {
+    content: "\f138";
+}
+
+.ms-status-triangle-outer::before {
+    content: "\f139";
+}
+
+.ms-status-triangle-inner::before {
+    content: "\f13a";
+}
+
+.ms-status-triangle-exclamation::before {
+    content: "\f13b";
+}
+
+.ms-status-circle-exclamation::before {
+    content: "\f13c";
+}
+
+.ms-status-circle-error-x::before {
+    content: "\f13d";
+}
+
+.ms-status-circle-checkmark::before {
+    content: "\f13e";
+}
+
+.ms-status-circle-info::before {
+    content: "\f13f";
+}
+
+.ms-status-circle-block::before {
+    content: "\f140";
+}
+
+.ms-status-circle-block2::before {
+    content: "\f141";
+}
+
+.ms-status-circle-question-mark::before {
+    content: "\f142";
+}
+
+.ms-status-circle-sync::before {
+    content: "\f143";
+}
+
+.ms-toll::before {
+    content: "\f160";
+}
+
+.ms-explore-content-single::before {
+    content: "\f164";
+}
+
+.ms-collapse-content::before {
+    content: "\f165";
+}
+
+.ms-collapse-content-single::before {
+    content: "\f166";
+}
+
+.ms-info-solid::before {
+    content: "\f167";
+}
+
+.ms-progress-ring-dots::before {
+    content: "\f16a";
+}
+
+.ms-calories-add::before {
+    content: "\f172";
+}
+
+.ms-branch-fork::before {
+    content: "\f173";
+}
+
+.ms-mobile-report::before {
+    content: "\f18a";
+}
+
+.ms-scale-volume::before {
+    content: "\f18c";
+}
+
+.ms-hard-drive-group::before {
+    content: "\f18f";
+}
+
+.ms-fast-mode::before {
+    content: "\f19a";
+}
+
+.ms-toggle-left::before {
+    content: "\f19e";
+}
+
+.ms-toggle-right::before {
+    content: "\f19f";
+}
+
+.ms-triangle-shape::before {
+    content: "\f1a7";
+}
+
+.ms-rectangle-shape::before {
+    content: "\f1a9";
+}
+
+.ms-trophy2::before {
+    content: "\f1ae";
+}
+
+.ms-bucket-color::before {
+    content: "\f1b6";
+}
+
+.ms-bucket-color-fill::before {
+    content: "\f1b7";
+}
+
+.ms-taskboard::before {
+    content: "\f1c2";
+}
+
+.ms-single-column::before {
+    content: "\f1d3";
+}
+
+.ms-double-column::before {
+    content: "\f1d4";
+}
+
+.ms-triple-column::before {
+    content: "\f1d5";
+}
+
+.ms-column-left-two-thirds::before {
+    content: "\f1d6";
+}
+
+.ms-column-right-two-thirds::before {
+    content: "\f1d7";
+}
+
+.ms-access-logo-fill::before {
+    content: "\f1db";
+}
+
+.ms-analytics-logo::before {
+    content: "\f1de";
+}
+
+.ms-analytics-query::before {
+    content: "\f1df";
+}
+
+.ms-new-analytics-query::before {
+    content: "\f1e0";
+}
+
+.ms-analytics-report::before {
+    content: "\f1e1";
+}
+
+.ms-word-logo::before {
+    content: "\f1e3";
+}
+
+.ms-word-logo-fill::before {
+    content: "\f1e4";
+}
+
+.ms-excel-logo::before {
+    content: "\f1e5";
+}
+
+.ms-excel-logo-fill::before {
+    content: "\f1e6";
+}
+
+.ms-one-note-logo::before {
+    content: "\f1e7";
+}
+
+.ms-one-note-logo-fill::before {
+    content: "\f1e8";
+}
+
+.ms-outlook-logo::before {
+    content: "\f1e9";
+}
+
+.ms-outlook-logo-fill::before {
+    content: "\f1ea";
+}
+
+.ms-power-point-logo::before {
+    content: "\f1eb";
+}
+
+.ms-power-point-logo-fill::before {
+    content: "\f1ec";
+}
+
+.ms-publisher-logo::before {
+    content: "\f1ed";
+}
+
+.ms-publisher-logo-fill::before {
+    content: "\f1ee";
+}
+
+.ms-schedule-event-action::before {
+    content: "\f1ef";
+}
+
+.ms-flame-solid::before {
+    content: "\f1f3";
+}
+
+.ms-server-processes::before {
+    content: "\f1fe";
+}
+
+.ms-server::before {
+    content: "\f201";
+}
+
+.ms-save-all::before {
+    content: "\f203";
+}
+
+.ms-linked-in-logo::before {
+    content: "\f20a";
+}
+
+.ms-decimals::before {
+    content: "\f218";
+}
+
+.ms-side-panel-mirrored::before {
+    content: "\f221";
+}
+
+.ms-protect-restrict::before {
+    content: "\f22a";
+}
+
+.ms-blog::before {
+    content: "\f22b";
+}
+
+.ms-unknown-mirrored::before {
+    content: "\f22e";
+}
+
+.ms-public-contact-card-mirrored::before {
+    content: "\f230";
+}
+
+.ms-grid-view-small::before {
+    content: "\f232";
+}
+
+.ms-grid-view-medium::before {
+    content: "\f233";
+}
+
+.ms-grid-view-large::before {
+    content: "\f234";
+}
+
+.ms-step::before {
+    content: "\f241";
+}
+
+.ms-step-insert::before {
+    content: "\f242";
+}
+
+.ms-step-shared::before {
+    content: "\f243";
+}
+
+.ms-step-shared-add::before {
+    content: "\f244";
+}
+
+.ms-step-shared-insert::before {
+    content: "\f245";
+}
+
+.ms-view-dashboard::before {
+    content: "\f246";
+}
+
+.ms-view-list::before {
+    content: "\f247";
+}
+
+.ms-view-list-group::before {
+    content: "\f248";
+}
+
+.ms-view-list-tree::before {
+    content: "\f249";
+}
+
+.ms-trigger-auto::before {
+    content: "\f24a";
+}
+
+.ms-trigger-user::before {
+    content: "\f24b";
+}
+
+.ms-pivot-chart::before {
+    content: "\f24c";
+}
+
+.ms-stacked-bar-chart::before {
+    content: "\f24d";
+}
+
+.ms-stacked-line-chart::before {
+    content: "\f24e";
+}
+
+.ms-build-queue::before {
+    content: "\f24f";
+}
+
+.ms-build-queue-new::before {
+    content: "\f250";
+}
+
+.ms-user-followed::before {
+    content: "\f25c";
+}
+
+.ms-contact-link::before {
+    content: "\f25f";
+}
+
+.ms-stack::before {
+    content: "\f26f";
+}
+
+.ms-bullseye::before {
+    content: "\f272";
+}
+
+.ms-venn-diagram::before {
+    content: "\f273";
+}
+
+.ms-five-tile-grid::before {
+    content: "\f274";
+}
+
+.ms-focal-point::before {
+    content: "\f277";
+}
+
+.ms-ringer-remove::before {
+    content: "\f279";
+}
+
+.ms-teams-logo-inverse::before {
+    content: "\f27a";
+}
+
+.ms-teams-logo::before {
+    content: "\f27b";
+}
+
+.ms-teams-logo-fill::before {
+    content: "\f27c";
+}
+
+.ms-skype-for-business-logo-fill::before {
+    content: "\f27d";
+}
+
+.ms-sharepoint-logo::before {
+    content: "\f27e";
+}
+
+.ms-sharepoint-logo-fill::before {
+    content: "\f27f";
+}
+
+.ms-delve-logo::before {
+    content: "\f280";
+}
+
+.ms-delve-logo-fill::before {
+    content: "\f281";
+}
+
+.ms-office-video-logo::before {
+    content: "\f282";
+}
+
+.ms-office-video-logo-fill::before {
+    content: "\f283";
+}
+
+.ms-exchange-logo::before {
+    content: "\f284";
+}
+
+.ms-exchange-logo-fill::before {
+    content: "\f285";
+}
+
+.ms-document-approval::before {
+    content: "\f28b";
+}
+
+.ms-clone-to-desktop::before {
+    content: "\f28c";
+}
+
+.ms-install-to-drive::before {
+    content: "\f28d";
+}
+
+.ms-blur::before {
+    content: "\f28e";
+}
+
+.ms-build::before {
+    content: "\f28f";
+}
+
+.ms-process-meta-task::before {
+    content: "\f290";
+}
+
+.ms-branch-fork2::before {
+    content: "\f291";
+}
+
+.ms-branch-locked::before {
+    content: "\f292";
+}
+
+.ms-branch-commit::before {
+    content: "\f293";
+}
+
+.ms-branch-compare::before {
+    content: "\f294";
+}
+
+.ms-branch-merge::before {
+    content: "\f295";
+}
+
+.ms-branch-pull-request::before {
+    content: "\f296";
+}
+
+.ms-branch-search::before {
+    content: "\f297";
+}
+
+.ms-branch-shelveset::before {
+    content: "\f298";
+}
+
+.ms-raw-source::before {
+    content: "\f299";
+}
+
+.ms-merge-duplicate::before {
+    content: "\f29a";
+}
+
+.ms-rows-group::before {
+    content: "\f29b";
+}
+
+.ms-rows-child::before {
+    content: "\f29c";
+}
+
+.ms-deploy::before {
+    content: "\f29d";
+}
+
+.ms-redeploy::before {
+    content: "\f29e";
+}
+
+.ms-server-enviroment::before {
+    content: "\f29f";
+}
+
+.ms-visio-diagram::before {
+    content: "\f2a0";
+}
+
+.ms-highlight-mapped-shapes::before {
+    content: "\f2a1";
+}
+
+.ms-text-callout::before {
+    content: "\f2a2";
+}
+
+.ms-icon-sets-flag::before {
+    content: "\f2a4";
+}
+
+.ms-visio-logo::before {
+    content: "\f2a7";
+}
+
+.ms-visio-logo-fill::before {
+    content: "\f2a8";
+}
+
+.ms-visio-document::before {
+    content: "\f2a9";
+}
+
+.ms-timeline-progress::before {
+    content: "\f2aa";
+}
+
+.ms-timeline-delivery::before {
+    content: "\f2ab";
+}
+
+.ms-backlog::before {
+    content: "\f2ac";
+}
+
+.ms-team-favorite::before {
+    content: "\f2ad";
+}
+
+.ms-task-group::before {
+    content: "\f2ae";
+}
+
+.ms-task-group-mirrored::before {
+    content: "\f2af";
+}
+
+.ms-scope-template::before {
+    content: "\f2b0";
+}
+
+.ms-assessment-group-template::before {
+    content: "\f2b1";
+}
+
+.ms-new-team-project::before {
+    content: "\f2b2";
+}
+
+.ms-comment-add::before {
+    content: "\f2b3";
+}
+
+.ms-comment-next::before {
+    content: "\f2b4";
+}
+
+.ms-comment-previous::before {
+    content: "\f2b5";
+}
+
+.ms-shop-server::before {
+    content: "\f2b6";
+}
+
+.ms-locale-language::before {
+    content: "\f2b7";
+}
+
+.ms-query-list::before {
+    content: "\f2b8";
+}
+
+.ms-user-sync::before {
+    content: "\f2b9";
+}
+
+.ms-user-pause::before {
+    content: "\f2ba";
+}
+
+.ms-streaming-off::before {
+    content: "\f2bb";
+}
+
+.ms-more-vertical::before {
+    content: "\f2bc";
+}
+
+.ms-arrow-tall-up-left::before {
+    content: "\f2bd";
+}
+
+.ms-arrow-tall-up-right::before {
+    content: "\f2be";
+}
+
+.ms-arrow-tall-down-left::before {
+    content: "\f2bf";
+}
+
+.ms-arrow-tall-down-right::before {
+    content: "\f2c0";
+}
+
+.ms-field-empty::before {
+    content: "\f2c1";
+}
+
+.ms-field-filled::before {
+    content: "\f2c2";
+}
+
+.ms-field-changed::before {
+    content: "\f2c3";
+}
+
+.ms-field-not-changed::before {
+    content: "\f2c4";
+}
+
+.ms-ringer-off::before {
+    content: "\f2c5";
+}
+
+.ms-play-resume::before {
+    content: "\f2c6";
+}
+
+.ms-bulleted-list2::before {
+    content: "\f2c7";
+}
+
+.ms-bulleted-list2-mirrored::before {
+    content: "\f2c8";
+}
+
+.ms-image-crosshair::before {
+    content: "\f2c9";
+}
+
+.ms-git-graph::before {
+    content: "\f2ca";
+}
+
+.ms-repo::before {
+    content: "\f2cb";
+}
+
+.ms-repo-solid::before {
+    content: "\f2cc";
+}
+
+.ms-folder-query::before {
+    content: "\f2cd";
+}
+
+.ms-folder-list::before {
+    content: "\f2ce";
+}
+
+.ms-folder-list-mirrored::before {
+    content: "\f2cf";
+}
+
+.ms-location-outline::before {
+    content: "\f2d0";
+}
+
+.ms-p-o-i-solid::before {
+    content: "\f2d1";
+}
+
+.ms-calculator-not-equal-to::before {
+    content: "\f2d2";
+}
+
+.ms-box-subtract-solid::before {
+    content: "\f2d3";
+}
+
+.ms-box-addition-solid::before {
+    content: "\f2d4";
+}
+
+.ms-box-multiply-solid::before {
+    content: "\f2d5";
+}
+
+.ms-box-play-solid::before {
+    content: "\f2d6";
+}
+
+.ms-box-checkmark-solid::before {
+    content: "\f2d7";
+}
+
+.ms-circle-pause-solid::before {
+    content: "\f2d8";
+}
+
+.ms-circle-pause::before {
+    content: "\f2d9";
+}
+
+.ms-m-s-n-videos-solid::before {
+    content: "\f2da";
+}
+
+.ms-circle-stop-solid::before {
+    content: "\f2db";
+}
+
+.ms-circle-stop::before {
+    content: "\f2dc";
+}
+
+.ms-navigate-back::before {
+    content: "\f2dd";
+}
+
+.ms-navigate-back-mirrored::before {
+    content: "\f2de";
+}
+
+.ms-navigate-forward::before {
+    content: "\f2df";
+}
+
+.ms-navigate-forward-mirrored::before {
+    content: "\f2e0";
+}
+
+.ms-unknown-solid::before {
+    content: "\f2e1";
+}
+
+.ms-unknown-mirrored-solid::before {
+    content: "\f2e2";
+}
+
+.ms-circle-addition::before {
+    content: "\f2e3";
+}
+
+.ms-circle-addition-solid::before {
+    content: "\f2e4";
+}
+
+.ms-file-p-d-b::before {
+    content: "\f2e5";
+}
+
+.ms-file-template::before {
+    content: "\f2e6";
+}
+
+.ms-file-s-q-l::before {
+    content: "\f2e7";
+}
+
+.ms-file-j-a-v-a::before {
+    content: "\f2e8";
+}
+
+.ms-file-a-s-p-x::before {
+    content: "\f2e9";
+}
+
+.ms-file-c-s-s::before {
+    content: "\f2ea";
+}
+
+.ms-file-sass::before {
+    content: "\f2eb";
+}
+
+.ms-file-less::before {
+    content: "\f2ec";
+}
+
+.ms-file-h-t-m-l::before {
+    content: "\f2ed";
+}
+
+.ms-java-script-language::before {
+    content: "\f2ee";
+}
+
+.ms-c-sharp-language::before {
+    content: "\f2ef";
+}
+
+.ms-c-sharp::before {
+    content: "\f2f0";
+}
+
+.ms-visual-basic-language::before {
+    content: "\f2f1";
+}
+
+.ms-v-b::before {
+    content: "\f2f2";
+}
+
+.ms-c-plus-plus-language::before {
+    content: "\f2f3";
+}
+
+.ms-c-plus-plus::before {
+    content: "\f2f4";
+}
+
+.ms-f-sharp-language::before {
+    content: "\f2f5";
+}
+
+.ms-f-sharp::before {
+    content: "\f2f6";
+}
+
+.ms-type-script-language::before {
+    content: "\f2f7";
+}
+
+.ms-python-language::before {
+    content: "\f2f8";
+}
+
+.ms-p-y::before {
+    content: "\f2f9";
+}
+
+.ms-coffee-script::before {
+    content: "\f2fa";
+}
+
+.ms-mark-down-language::before {
+    content: "\f2fb";
+}
+
+.ms-full-width::before {
+    content: "\f2fe";
+}
+
+.ms-full-width-edit::before {
+    content: "\f2ff";
+}
+
+.ms-plug::before {
+    content: "\f300";
+}
+
+.ms-plug-solid::before {
+    content: "\f301";
+}
+
+.ms-plug-connected::before {
+    content: "\f302";
+}
+
+.ms-plug-disconnected::before {
+    content: "\f303";
+}
+
+.ms-unlock-solid::before {
+    content: "\f304";
+}
+
+.ms-variable::before {
+    content: "\f305";
+}
+
+.ms-parameter::before {
+    content: "\f306";
+}
+
+.ms-comment-urgent::before {
+    content: "\f307";
+}
+
+.ms-storyboard::before {
+    content: "\f308";
+}
+
+.ms-diff-inline::before {
+    content: "\f309";
+}
+
+.ms-diff-side-by-side::before {
+    content: "\f30a";
+}
+
+.ms-image-diff::before {
+    content: "\f30b";
+}
+
+.ms-image-pixel::before {
+    content: "\f30c";
+}
+
+.ms-file-bug::before {
+    content: "\f30d";
+}
+
+.ms-file-code::before {
+    content: "\f30e";
+}
+
+.ms-file-comment::before {
+    content: "\f30f";
+}
+
+.ms-business-hours-sign::before {
+    content: "\f310";
+}
+
+.ms-file-image::before {
+    content: "\f311";
+}
+
+.ms-file-symlink::before {
+    content: "\f312";
+}
+
+.ms-auto-fill-template::before {
+    content: "\f313";
+}
+
+.ms-work-item::before {
+    content: "\f314";
+}
+
+.ms-work-item-bug::before {
+    content: "\f315";
+}
+
+.ms-log-remove::before {
+    content: "\f316";
+}
+
+.ms-column-options::before {
+    content: "\f317";
+}
+
+.ms-packages::before {
+    content: "\f318";
+}
+
+.ms-build-issue::before {
+    content: "\f319";
+}
+
+.ms-assessment-group::before {
+    content: "\f31a";
+}
+
+.ms-variable-group::before {
+    content: "\f31b";
+}
+
+.ms-full-history::before {
+    content: "\f31c";
+}
+
+.ms-single-column-edit::before {
+    content: "\f321";
+}
+
+.ms-double-column-edit::before {
+    content: "\f322";
+}
+
+.ms-triple-column-edit::before {
+    content: "\f323";
+}
+
+.ms-column-left-two-thirds-edit::before {
+    content: "\f324";
+}
+
+.ms-column-right-two-thirds-edit::before {
+    content: "\f325";
+}
+
+.ms-stream-logo::before {
+    content: "\f329";
+}
+
+.ms-passive-authentication::before {
+    content: "\f32a";
+}
+
+.ms-alert-solid::before {
+    content: "\f331";
+}
+
+.ms-megaphone-solid::before {
+    content: "\f332";
+}
+
+.ms-task-solid::before {
+    content: "\f333";
+}
+
+.ms-configuration-solid::before {
+    content: "\f334";
+}
+
+.ms-bug-solid::before {
+    content: "\f335";
+}
+
+.ms-crown-solid::before {
+    content: "\f336";
+}
+
+.ms-trophy2-solid::before {
+    content: "\f337";
+}
+
+.ms-quick-note-solid::before {
+    content: "\f338";
+}
+
+.ms-construction-cone-solid::before {
+    content: "\f339";
+}
+
+.ms-page-list-solid::before {
+    content: "\f33a";
+}
+
+.ms-page-list-mirrored-solid::before {
+    content: "\f33b";
+}
+
+.ms-starburst-solid::before {
+    content: "\f33c";
+}
+
+.ms-reading-mode-solid::before {
+    content: "\f33d";
+}
+
+.ms-sad-solid::before {
+    content: "\f33e";
+}
+
+.ms-health-solid::before {
+    content: "\f33f";
+}
+
+.ms-shield-solid::before {
+    content: "\f340";
+}
+
+.ms-gift-box-solid::before {
+    content: "\f341";
+}
+
+.ms-shopping-cart-solid::before {
+    content: "\f342";
+}
+
+.ms-mail-solid::before {
+    content: "\f343";
+}
+
+.ms-chat-solid::before {
+    content: "\f344";
+}
+
+.ms-ribbon-solid::before {
+    content: "\f345";
+}
+
+.ms-financial-solid::before {
+    content: "\f346";
+}
+
+.ms-financial-mirrored-solid::before {
+    content: "\f347";
+}
+
+.ms-headset-solid::before {
+    content: "\f348";
+}
+
+.ms-permissions-solid::before {
+    content: "\f349";
+}
+
+.ms-parking-solid::before {
+    content: "\f34a";
+}
+
+.ms-parking-mirrored-solid::before {
+    content: "\f34b";
+}
+
+.ms-diamond-solid::before {
+    content: "\f34c";
+}
+
+.ms-asterisk-solid::before {
+    content: "\f34d";
+}
+
+.ms-offline-storage-solid::before {
+    content: "\f34e";
+}
+
+.ms-bank-solid::before {
+    content: "\f34f";
+}
+
+.ms-decision-solid::before {
+    content: "\f350";
+}
+
+.ms-parachute::before {
+    content: "\f351";
+}
+
+.ms-parachute-solid::before {
+    content: "\f352";
+}
+
+.ms-filters-solid::before {
+    content: "\f353";
+}
+
+.ms-color-solid::before {
+    content: "\f354";
+}
+
+.ms-review-solid::before {
+    content: "\f355";
+}
+
+.ms-review-request-solid::before {
+    content: "\f356";
+}
+
+.ms-review-request-mirrored-solid::before {
+    content: "\f357";
+}
+
+.ms-review-response-solid::before {
+    content: "\f358";
+}
+
+.ms-feedback-request-solid::before {
+    content: "\f359";
+}
+
+.ms-feedback-request-mirrored-solid::before {
+    content: "\f35a";
+}
+
+.ms-feedback-response-solid::before {
+    content: "\f35b";
+}
+
+.ms-work-item-bar::before {
+    content: "\f35c";
+}
+
+.ms-work-item-bar-solid::before {
+    content: "\f35d";
+}
+
+.ms-separator::before {
+    content: "\f35e";
+}
+
+.ms-navigate-external-inline::before {
+    content: "\f35f";
+}
+
+.ms-plan-view::before {
+    content: "\f360";
+}
+
+.ms-timeline-matrix-view::before {
+    content: "\f361";
+}
+
+.ms-engineering-group::before {
+    content: "\f362";
+}
+
+.ms-project-collection::before {
+    content: "\f363";
+}
+
+.ms-caret-bottom-right-center8::before {
+    content: "\f364";
+}
+
+.ms-caret-bottom-left-center8::before {
+    content: "\f365";
+}
+
+.ms-caret-top-right-center8::before {
+    content: "\f366";
+}
+
+.ms-caret-top-left-center8::before {
+    content: "\f367";
+}
+
+.ms-donut-chart::before {
+    content: "\f368";
+}
+
+.ms-chevron-unfold10::before {
+    content: "\f369";
+}
+
+.ms-chevron-fold10::before {
+    content: "\f36a";
+}
+
+.ms-double-chevron-down8::before {
+    content: "\f36b";
+}
+
+.ms-double-chevron-up8::before {
+    content: "\f36c";
+}
+
+.ms-double-chevron-left8::before {
+    content: "\f36d";
+}
+
+.ms-double-chevron-right8::before {
+    content: "\f36e";
+}
+
+.ms-chevron-down-end6::before {
+    content: "\f36f";
+}
+
+.ms-chevron-up-end6::before {
+    content: "\f370";
+}
+
+.ms-chevron-left-end6::before {
+    content: "\f371";
+}
+
+.ms-chevron-right-end6::before {
+    content: "\f372";
+}
+
+.ms-egnyte-logo::before {
+    content: "\f373";
+}
+
+.ms-google-drive-logo-left-green::before {
+    content: "\f374";
+}
+
+.ms-google-drive-logo-bottom-blue::before {
+    content: "\f375";
+}
+
+.ms-google-drive-logo-right-yellow::before {
+    content: "\f376";
+}
+
+.ms-context-menu::before {
+    content: "\f37c";
+}
+
+.ms-azure-a-p-i-management::before {
+    content: "\f37f";
+}
+
+.ms-azure-service-endpoint::before {
+    content: "\f380";
+}
+
+.ms-v-s-t-s-logo::before {
+    content: "\f381";
+}
+
+.ms-v-s-t-s-alt-logo1::before {
+    content: "\f382";
+}
+
+.ms-v-s-t-s-alt-logo2::before {
+    content: "\f383";
+}
+
+.ms-file-type-solution::before {
+    content: "\f387";
+}
+
+.ms-word-logo-inverse16::before {
+    content: "\f390";
+}
+
+.ms-word-logo16::before {
+    content: "\f391";
+}
+
+.ms-word-logo-fill16::before {
+    content: "\f392";
+}
+
+.ms-power-point-logo-inverse16::before {
+    content: "\f393";
+}
+
+.ms-power-point-logo16::before {
+    content: "\f394";
+}
+
+.ms-power-point-logo-fill16::before {
+    content: "\f395";
+}
+
+.ms-excel-logo-inverse16::before {
+    content: "\f396";
+}
+
+.ms-excel-logo16::before {
+    content: "\f397";
+}
+
+.ms-excel-logo-fill16::before {
+    content: "\f398";
+}
+
+.ms-one-note-logo-inverse16::before {
+    content: "\f399";
+}
+
+.ms-one-note-logo16::before {
+    content: "\f39a";
+}
+
+.ms-one-note-logo-fill16::before {
+    content: "\f39b";
+}
+
+.ms-outlook-logo-inverse16::before {
+    content: "\f39c";
+}
+
+.ms-outlook-logo16::before {
+    content: "\f39d";
+}
+
+.ms-outlook-logo-fill16::before {
+    content: "\f39e";
+}
+
+.ms-publisher-logo-inverse16::before {
+    content: "\f39f";
+}
+
+.ms-publisher-logo16::before {
+    content: "\f3a0";
+}
+
+.ms-publisher-logo-fill16::before {
+    content: "\f3a1";
+}
+
+.ms-visio-logo-inverse16::before {
+    content: "\f3a2";
+}
+
+.ms-visio-logo16::before {
+    content: "\f3a3";
+}
+
+.ms-visio-logo-fill16::before {
+    content: "\f3a4";
+}
+
+.ms-test-beaker::before {
+    content: "\f3a5";
+}
+
+.ms-test-beaker-solid::before {
+    content: "\f3a6";
+}
+
+.ms-test-explore-solid::before {
+    content: "\f3a7";
+}
+
+.ms-test-auto-solid::before {
+    content: "\f3a8";
+}
+
+.ms-test-user-solid::before {
+    content: "\f3a9";
+}
+
+.ms-test-impact-solid::before {
+    content: "\f3aa";
+}
+
+.ms-test-plan::before {
+    content: "\f3ab";
+}
+
+.ms-test-step::before {
+    content: "\f3ac";
+}
+
+.ms-test-parameter::before {
+    content: "\f3ad";
+}
+
+.ms-test-suite::before {
+    content: "\f3ae";
+}
+
+.ms-test-case::before {
+    content: "\f3af";
+}
+
+.ms-sprint::before {
+    content: "\f3b0";
+}
+
+.ms-sign-out::before {
+    content: "\f3b1";
+}
+
+.ms-trigger-approval::before {
+    content: "\f3b2";
+}
+
+.ms-rocket::before {
+    content: "\f3b3";
+}
+
+.ms-azure-key-vault::before {
+    content: "\f3b4";
+}
+
+.ms-onboarding::before {
+    content: "\f3ba";
+}
+
+.ms-transition::before {
+    content: "\f3bc";
+}
+
+.ms-like-solid::before {
+    content: "\f3bf";
+}
+
+.ms-dislike-solid::before {
+    content: "\f3c0";
+}
+
+.ms-c-r-m-customer-insights-app::before {
+    content: "\f3c8";
+}
+
+.ms-edit-create::before {
+    content: "\f3c9";
+}
+
+.ms-un-set-color::before {
+    content: "\f3f9";
+}
+
+.ms-decline-call::before {
+    content: "\f405";
+}
+
+.ms-rectangular-clipping::before {
+    content: "\f407";
+}
+
+.ms-teams-logo16::before {
+    content: "\f40a";
+}
+
+.ms-teams-logo-fill16::before {
+    content: "\f40b";
+}
+
+.ms-spacer::before {
+    content: "\f40d";
+}
+
+.ms-skype-logo16::before {
+    content: "\f40e";
+}
+
+.ms-skype-for-business-logo16::before {
+    content: "\f40f";
+}
+
+.ms-skype-for-business-logo-fill16::before {
+    content: "\f410";
+}
+
+.ms-filter-solid::before {
+    content: "\f412";
+}
+
+.ms-mail-undelivered::before {
+    content: "\f415";
+}
+
+.ms-mail-tentative::before {
+    content: "\f416";
+}
+
+.ms-mail-tentative-mirrored::before {
+    content: "\f417";
+}
+
+.ms-mail-reminder::before {
+    content: "\f418";
+}
+
+.ms-receipt-undelivered::before {
+    content: "\f419";
+}
+
+.ms-receipt-tentative::before {
+    content: "\f41a";
+}
+
+.ms-receipt-tentative-mirrored::before {
+    content: "\f41b";
+}
+
+.ms-inbox::before {
+    content: "\f41c";
+}
+
+.ms-i-r-m-reply::before {
+    content: "\f41d";
+}
+
+.ms-i-r-m-reply-mirrored::before {
+    content: "\f41e";
+}
+
+.ms-i-r-m-forward::before {
+    content: "\f41f";
+}
+
+.ms-i-r-m-forward-mirrored::before {
+    content: "\f420";
+}
+
+.ms-voicemail-i-r-m::before {
+    content: "\f421";
+}
+
+.ms-event-accepted::before {
+    content: "\f422";
+}
+
+.ms-event-tentative::before {
+    content: "\f423";
+}
+
+.ms-event-tentative-mirrored::before {
+    content: "\f424";
+}
+
+.ms-event-declined::before {
+    content: "\f425";
+}
+
+.ms-i-d-badge::before {
+    content: "\f427";
+}
+
+.ms-background-color::before {
+    content: "\f42b";
+}
+
+.ms-office-forms-logo-inverse16::before {
+    content: "\f433";
+}
+
+.ms-office-forms-logo::before {
+    content: "\f434";
+}
+
+.ms-office-forms-logo-fill::before {
+    content: "\f435";
+}
+
+.ms-office-forms-logo16::before {
+    content: "\f436";
+}
+
+.ms-office-forms-logo-fill16::before {
+    content: "\f437";
+}
+
+.ms-office-forms-logo-inverse24::before {
+    content: "\f43a";
+}
+
+.ms-office-forms-logo24::before {
+    content: "\f43b";
+}
+
+.ms-office-forms-logo-fill24::before {
+    content: "\f43c";
+}
+
+.ms-page-lock::before {
+    content: "\f43f";
+}
+
+.ms-not-executed::before {
+    content: "\f440";
+}
+
+.ms-not-impacted-solid::before {
+    content: "\f441";
+}
+
+.ms-field-read-only::before {
+    content: "\f442";
+}
+
+.ms-field-required::before {
+    content: "\f443";
+}
+
+.ms-backlog-board::before {
+    content: "\f444";
+}
+
+.ms-external-build::before {
+    content: "\f445";
+}
+
+.ms-external-t-f-v-c::before {
+    content: "\f446";
+}
+
+.ms-external-x-a-m-l::before {
+    content: "\f447";
+}
+
+.ms-issue-solid::before {
+    content: "\f448";
+}
+
+.ms-defect-solid::before {
+    content: "\f449";
+}
+
+.ms-ladybug-solid::before {
+    content: "\f44a";
+}
+
+.ms-m-t-m-logo::before {
+    content: "\f44b";
+}
+
+.ms-nuget-logo::before {
+    content: "\f44c";
+}
+
+.ms-t-f-v-c-logo::before {
+    content: "\f44d";
+}
+
+.ms-project-logo32::before {
+    content: "\f47e";
+}
+
+.ms-project-logo-fill32::before {
+    content: "\f47f";
+}
+
+.ms-project-logo16::before {
+    content: "\f480";
+}
+
+.ms-project-logo-fill16::before {
+    content: "\f481";
+}
+
+.ms-sway-logo32::before {
+    content: "\f482";
+}
+
+.ms-sway-logo-fill32::before {
+    content: "\f483";
+}
+
+.ms-sway-logo16::before {
+    content: "\f484";
+}
+
+.ms-sway-logo-fill16::before {
+    content: "\f485";
+}
+
+.ms-class-notebook-logo32::before {
+    content: "\f486";
+}
+
+.ms-class-notebook-logo-fill32::before {
+    content: "\f487";
+}
+
+.ms-class-notebook-logo16::before {
+    content: "\f488";
+}
+
+.ms-class-notebook-logo-fill16::before {
+    content: "\f489";
+}
+
+.ms-class-notebook-logo-inverse32::before {
+    content: "\f48a";
+}
+
+.ms-class-notebook-logo-inverse16::before {
+    content: "\f48b";
+}
+
+.ms-staff-notebook-logo32::before {
+    content: "\f48c";
+}
+
+.ms-staff-notebook-logo-fill32::before {
+    content: "\f48d";
+}
+
+.ms-staff-notebook-logo16::before {
+    content: "\f48e";
+}
+
+.ms-staff-notebook-logo-fill16::before {
+    content: "\f48f";
+}
+
+.ms-staff-notebook-logo-inverted32::before {
+    content: "\f490";
+}
+
+.ms-staff-notebook-logo-inverted16::before {
+    content: "\f491";
+}
+
+.ms-kaizala-logo::before {
+    content: "\f492";
+}
+
+.ms-task-logo::before {
+    content: "\f493";
+}
+
+.ms-protection-center-logo32::before {
+    content: "\f494";
+}
+
+.ms-nonprofit-logo32::before {
+    content: "\f495";
+}
+
+.ms-gallatin-logo::before {
+    content: "\f496";
+}
+
+.ms-globe2::before {
+    content: "\f49a";
+}
+
+.ms-guitar::before {
+    content: "\f49b";
+}
+
+.ms-breakfast::before {
+    content: "\f49c";
+}
+
+.ms-brunch::before {
+    content: "\f49d";
+}
+
+.ms-beer-mug::before {
+    content: "\f49e";
+}
+
+.ms-vacation::before {
+    content: "\f49f";
+}
+
+.ms-teeth::before {
+    content: "\f4a0";
+}
+
+.ms-taxi::before {
+    content: "\f4a1";
+}
+
+.ms-chopsticks::before {
+    content: "\f4a2";
+}
+
+.ms-sync-occurence::before {
+    content: "\f4a3";
+}
+
+.ms-unsync-occurence::before {
+    content: "\f4a4";
+}
+
+.ms-primary-calendar::before {
+    content: "\f4ae";
+}
+
+.ms-search-calendar::before {
+    content: "\f4af";
+}
+
+.ms-video-off::before {
+    content: "\f4b0";
+}
+
+.ms-microsoft-flow-logo::before {
+    content: "\f4b1";
+}
+
+.ms-business-center-logo::before {
+    content: "\f4b2";
+}
+
+.ms-to-do-logo-bottom::before {
+    content: "\f4b3";
+}
+
+.ms-to-do-logo-top::before {
+    content: "\f4b4";
+}
+
+.ms-edit-solid12::before {
+    content: "\f4b5";
+}
+
+.ms-edit-solid-mirrored12::before {
+    content: "\f4b6";
+}
+
+.ms-uneditable-solid12::before {
+    content: "\f4b7";
+}
+
+.ms-uneditable-solid-mirrored12::before {
+    content: "\f4b8";
+}
+
+.ms-uneditable-mirrored::before {
+    content: "\f4b9";
+}
+
+.ms-admin-a-logo32::before {
+    content: "\f4ba";
+}
+
+.ms-admin-a-logo-fill32::before {
+    content: "\f4bb";
+}
+
+.ms-to-do-logo-inverse::before {
+    content: "\f4bc";
+}
+
+.ms-snooze::before {
+    content: "\f4bd";
+}
+
+.ms-waffle-office365::before {
+    content: "\f4e0";
+}
+
+.ms-image-search::before {
+    content: "\f4e8";
+}
+
+.ms-news-search::before {
+    content: "\f4e9";
+}
+
+.ms-video-search::before {
+    content: "\f4ea";
+}
+
+.ms-r::before {
+    content: "\f4eb";
+}
+
+.ms-font-color-a::before {
+    content: "\f4ec";
+}
+
+.ms-font-color-swatch::before {
+    content: "\f4ed";
+}
+
+.ms-light-weight::before {
+    content: "\f4ee";
+}
+
+.ms-normal-weight::before {
+    content: "\f4ef";
+}
+
+.ms-semibold-weight::before {
+    content: "\f4f0";
+}
+
+.ms-group-object::before {
+    content: "\f4f1";
+}
+
+.ms-ungroup-object::before {
+    content: "\f4f2";
+}
+
+.ms-align-horizontal-left::before {
+    content: "\f4f3";
+}
+
+.ms-align-horizontal-center::before {
+    content: "\f4f4";
+}
+
+.ms-align-horizontal-right::before {
+    content: "\f4f5";
+}
+
+.ms-align-vertical-top::before {
+    content: "\f4f6";
+}
+
+.ms-align-vertical-center::before {
+    content: "\f4f7";
+}
+
+.ms-align-vertical-bottom::before {
+    content: "\f4f8";
+}
+
+.ms-horizontal-distribute-center::before {
+    content: "\f4f9";
+}
+
+.ms-vertical-distribute-center::before {
+    content: "\f4fa";
+}
+
+.ms-ellipse::before {
+    content: "\f4fb";
+}
+
+.ms-line::before {
+    content: "\f4fc";
+}
+
+.ms-octagon::before {
+    content: "\f4fd";
+}
+
+.ms-hexagon::before {
+    content: "\f4fe";
+}
+
+.ms-pentagon::before {
+    content: "\f4ff";
+}
+
+.ms-right-triangle::before {
+    content: "\f500";
+}
+
+.ms-half-circle::before {
+    content: "\f501";
+}
+
+.ms-quarter-circle::before {
+    content: "\f502";
+}
+
+.ms-three-quarter-circle::before {
+    content: "\f503";
+}
+
+.ms-6-point-star::before {
+    content: "\f504";
+}
+
+.ms-12-point-star::before {
+    content: "\f505";
+}
+
+.ms-arrange-bring-to-front::before {
+    content: "\f506";
+}
+
+.ms-arrange-send-to-back::before {
+    content: "\f507";
+}
+
+.ms-arrange-send-backward::before {
+    content: "\f508";
+}
+
+.ms-arrange-bring-forward::before {
+    content: "\f509";
+}
+
+.ms-border-dash::before {
+    content: "\f50a";
+}
+
+.ms-border-dot::before {
+    content: "\f50b";
+}
+
+.ms-line-style::before {
+    content: "\f50c";
+}
+
+.ms-line-thickness::before {
+    content: "\f50d";
+}
+
+.ms-window-edit::before {
+    content: "\f50e";
+}
+
+.ms-hint-text::before {
+    content: "\f50f";
+}
+
+.ms-media-add::before {
+    content: "\f510";
+}
+
+.ms-anchor-lock::before {
+    content: "\f511";
+}
+
+.ms-auto-height::before {
+    content: "\f512";
+}
+
+.ms-chart-series::before {
+    content: "\f513";
+}
+
+.ms-chart-x-angle::before {
+    content: "\f514";
+}
+
+.ms-chart-y-angle::before {
+    content: "\f515";
+}
+
+.ms-combobox::before {
+    content: "\f516";
+}
+
+.ms-line-spacing::before {
+    content: "\f517";
+}
+
+.ms-padding::before {
+    content: "\f518";
+}
+
+.ms-padding-top::before {
+    content: "\f519";
+}
+
+.ms-padding-bottom::before {
+    content: "\f51a";
+}
+
+.ms-padding-left::before {
+    content: "\f51b";
+}
+
+.ms-padding-right::before {
+    content: "\f51c";
+}
+
+.ms-navigation-flipper::before {
+    content: "\f51d";
+}
+
+.ms-align-justify::before {
+    content: "\f51e";
+}
+
+.ms-text-overflow::before {
+    content: "\f51f";
+}
+
+.ms-visuals-folder::before {
+    content: "\f520";
+}
+
+.ms-visuals-store::before {
+    content: "\f521";
+}
+
+.ms-picture-center::before {
+    content: "\f522";
+}
+
+.ms-picture-fill::before {
+    content: "\f523";
+}
+
+.ms-picture-position::before {
+    content: "\f524";
+}
+
+.ms-picture-stretch::before {
+    content: "\f525";
+}
+
+.ms-picture-tile::before {
+    content: "\f526";
+}
+
+.ms-slider::before {
+    content: "\f527";
+}
+
+.ms-slider-handle-size::before {
+    content: "\f528";
+}
+
+.ms-default-ratio::before {
+    content: "\f529";
+}
+
+.ms-number-sequence::before {
+    content: "\f52a";
+}
+
+.ms-g-u-i-d::before {
+    content: "\f52b";
+}
+
+.ms-report-add::before {
+    content: "\f52c";
+}
+
+.ms-dashboard-add::before {
+    content: "\f52d";
+}
+
+.ms-map-pin-solid::before {
+    content: "\f52e";
+}
+
+.ms-web-publish::before {
+    content: "\f52f";
+}
+
+.ms-pie-single-solid::before {
+    content: "\f530";
+}
+
+.ms-blocked-solid::before {
+    content: "\f531";
+}
+
+.ms-drill-down::before {
+    content: "\f532";
+}
+
+.ms-drill-down-solid::before {
+    content: "\f533";
+}
+
+.ms-drill-expand::before {
+    content: "\f534";
+}
+
+.ms-drill-show::before {
+    content: "\f535";
+}
+
+.ms-special-event::before {
+    content: "\f536";
+}
+
+.ms-one-drive-folder16::before {
+    content: "\f53b";
+}
+
+.ms-chronos-logo::before {
+    content: "\f541";
+}
+
+.ms-functional-manager-dashboard::before {
+    content: "\f542";
+}
+
+.ms-b-i-dashboard::before {
+    content: "\f543";
+}
+
+.ms-code-edit::before {
+    content: "\f544";
+}
+
+.ms-renewal-current::before {
+    content: "\f545";
+}
+
+.ms-renewal-future::before {
+    content: "\f546";
+}
+
+.ms-split-object::before {
+    content: "\f547";
+}
+
+.ms-bulk-upload::before {
+    content: "\f548";
+}
+
+.ms-download-document::before {
+    content: "\f549";
+}
+
+.ms-flower::before {
+    content: "\f54e";
+}
+
+.ms-waitlist-confirm::before {
+    content: "\f550";
+}
+
+.ms-waitlist-confirm-mirrored::before {
+    content: "\f551";
+}
+
+.ms-laptop-secure::before {
+    content: "\f552";
+}
+
+.ms-drag-object::before {
+    content: "\f553";
+}
+
+.ms-entry-view::before {
+    content: "\f554";
+}
+
+.ms-entry-decline::before {
+    content: "\f555";
+}
+
+.ms-contact-card-settings::before {
+    content: "\f556";
+}
+
+.ms-contact-card-settings-mirrored::before {
+    content: "\f557";
+}
+
+.ms-calendar-settings::before {
+    content: "\f558";
+}
+
+.ms-calendar-settings-mirrored::before {
+    content: "\f559";
+}
+
+.ms-hard-drive-lock::before {
+    content: "\f55a";
+}
+
+.ms-hard-drive-unlock::before {
+    content: "\f55b";
+}
+
+.ms-account-management::before {
+    content: "\f55c";
+}
+
+.ms-transition-pop::before {
+    content: "\f5b2";
+}
+
+.ms-transition-push::before {
+    content: "\f5b3";
+}
+
+.ms-transition-effect::before {
+    content: "\f5b4";
+}
+
+.ms-lookup-entities::before {
+    content: "\f5b5";
+}
+
+.ms-explore-data::before {
+    content: "\f5b6";
+}
+
+.ms-add-bookmark::before {
+    content: "\f5b7";
+}
+
+.ms-search-bookmark::before {
+    content: "\f5b8";
+}
+
+.ms-drill-through::before {
+    content: "\f5b9";
+}
+
+.ms-master-database::before {
+    content: "\f5ba";
+}
+
+.ms-certified-database::before {
+    content: "\f5bb";
+}
+
+.ms-maximum-value::before {
+    content: "\f5bc";
+}
+
+.ms-minimum-value::before {
+    content: "\f5bd";
+}
+
+.ms-visual-studio-i-d-e-logo32::before {
+    content: "\f5d0";
+}
+
+.ms-apache-ivy-logo32::before {
+    content: "\f5d1";
+}
+
+.ms-bitbucket-logo32::before {
+    content: "\f5d2";
+}
+
+.ms-linux-logo32::before {
+    content: "\f5d3";
+}
+
+.ms-gradle-logo32::before {
+    content: "\f5d4";
+}
+
+.ms-paste-as-text::before {
+    content: "\f5d5";
+}
+
+.ms-paste-as-code::before {
+    content: "\f5d6";
+}
+
+.ms-browser-tab::before {
+    content: "\f5d7";
+}
+
+.ms-browser-tab-screenshot::before {
+    content: "\f5d8";
+}
+
+.ms-desktop-screenshot::before {
+    content: "\f5d9";
+}
+
+.ms-file-y-m-l::before {
+    content: "\f5da";
+}
+
+.ms-clipboard-solid::before {
+    content: "\f5dc";
+}
+
+.ms-fabric-user-folder::before {
+    content: "\f5e5";
+}
+
+.ms-fabric-network-folder::before {
+    content: "\f5e6";
+}
+
+.ms-analytics-view::before {
+    content: "\f5f1";
+}
+
+.ms-video360-generic::before {
+    content: "\f609";
+}
+
+.ms-leave::before {
+    content: "\f627";
+}
+
+.ms-trending12::before {
+    content: "\f62d";
+}
+
+.ms-blocked12::before {
+    content: "\f62e";
+}
+
+.ms-warning12::before {
+    content: "\f62f";
+}
+
+.ms-checked-out-by-other12::before {
+    content: "\f630";
+}
+
+.ms-checked-out-by-you12::before {
+    content: "\f631";
+}
+
+.ms-circle-shape-solid::before {
+    content: "\f63c";
+}
+
+.ms-square-shape-solid::before {
+    content: "\f63d";
+}
+
+.ms-triangle-shape-solid::before {
+    content: "\f63e";
+}
+
+.ms-drop-shape-solid::before {
+    content: "\f63f";
+}
+
+.ms-rectangle-shape-solid::before {
+    content: "\f640";
+}
+
+.ms-insert-columns-left::before {
+    content: "\f64a";
+}
+
+.ms-insert-columns-right::before {
+    content: "\f64b";
+}
+
+.ms-insert-rows-above::before {
+    content: "\f64c";
+}
+
+.ms-insert-rows-below::before {
+    content: "\f64d";
+}
+
+.ms-delete-columns::before {
+    content: "\f64e";
+}
+
+.ms-delete-rows::before {
+    content: "\f64f";
+}
+
+.ms-delete-rows-mirrored::before {
+    content: "\f650";
+}
+
+.ms-delete-table::before {
+    content: "\f651";
+}
+
+.ms-git-logo::before {
+    content: "\f65d";
+}
+
+.ms-git-hub-logo::before {
+    content: "\f65e";
+}
+
+.ms-apache-maven-logo::before {
+    content: "\f65f";
+}
+
+.ms-n-p-m-logo::before {
+    content: "\f660";
+}
+
+.ms-git-fork::before {
+    content: "\f661";
+}
+
+.ms-s-v-n-logo::before {
+    content: "\f662";
+}
+
+.ms-jenkins-logo::before {
+    content: "\f663";
+}
+
+.ms-version-control-push::before {
+    content: "\f664";
+}
+
+.ms-external-git::before {
+    content: "\f665";
+}
+
+.ms-stacked-column-chart2::before {
+    content: "\f666";
+}
+
+.ms-triple-column-wide::before {
+    content: "\f66e";
+}
+
+.ms-quad-column::before {
+    content: "\f66f";
+}
+
+.ms-white-board-app16::before {
+    content: "\f673";
+}
+
+.ms-white-board-app32::before {
+    content: "\f674";
+}
+
+.ms-insert-signature-line::before {
+    content: "\f677";
+}
+
+.ms-arrange-by-from::before {
+    content: "\f678";
+}
+
+.ms-phishing::before {
+    content: "\f679";
+}
+
+.ms-create-mail-rule::before {
+    content: "\f67a";
+}
+
+.ms-publish-course::before {
+    content: "\f699";
+}
+
+.ms-dictionary-remove::before {
+    content: "\f69a";
+}
+
+.ms-user-remove::before {
+    content: "\f69b";
+}
+
+.ms-user-event::before {
+    content: "\f69c";
+}
+
+.ms-encryption::before {
+    content: "\f69d";
+}
+
+.ms-d365-talent-learn::before {
+    content: "\f6bb";
+}
+
+.ms-d365-talent-insight::before {
+    content: "\f6bc";
+}
+
+.ms-d365-talent-h-r-core::before {
+    content: "\f6bd";
+}
+
+.ms-backlog-list::before {
+    content: "\f6bf";
+}
+
+.ms-button-control::before {
+    content: "\f6c0";
+}
+
+.ms-table-group::before {
+    content: "\f6d9";
+}
+
+.ms-mountain-climbing::before {
+    content: "\f6db";
+}
+
+.ms-tag-unknown::before {
+    content: "\f6df";
+}
+
+.ms-tag-unknown-mirror::before {
+    content: "\f6e0";
+}
+
+.ms-tag-unknown12::before {
+    content: "\f6e1";
+}
+
+.ms-tag-unknown12-mirror::before {
+    content: "\f6e2";
+}
+
+.ms-link12::before {
+    content: "\f6e3";
+}
+
+.ms-presentation::before {
+    content: "\f6e4";
+}
+
+.ms-presentation12::before {
+    content: "\f6e5";
+}
+
+.ms-lock12::before {
+    content: "\f6e6";
+}
+
+.ms-build-definition::before {
+    content: "\f6e9";
+}
+
+.ms-release-definition::before {
+    content: "\f6ea";
+}
+
+.ms-save-template::before {
+    content: "\f6ec";
+}
+
+.ms-user-gauge::before {
+    content: "\f6ed";
+}
+
+.ms-blocked-site-solid12::before {
+    content: "\f70a";
+}
+
+.ms-tag-solid::before {
+    content: "\f70e";
+}
+
+.ms-office-chat::before {
+    content: "\f70f";
+}
+
+.ms-office-chat-solid::before {
+    content: "\f710";
+}
+
+.ms-mail-schedule::before {
+    content: "\f72e";
+}
+
+.ms-warning-solid::before {
+    content: "\f736";
+}
+
+.ms-blocked2-solid::before {
+    content: "\f737";
+}
+
+.ms-skype-circle-arrow::before {
+    content: "\f747";
+}
+
+.ms-skype-arrow::before {
+    content: "\f748";
+}
+
+.ms-sync-status::before {
+    content: "\f751";
+}
+
+.ms-sync-status-solid::before {
+    content: "\f752";
+}
+
+.ms-project-document::before {
+    content: "\f759";
+}
+
+.ms-to-do-logo-outline::before {
+    content: "\f75b";
+}
+
+.ms-visio-online-logo-fill32::before {
+    content: "\f75f";
+}
+
+.ms-visio-online-logo32::before {
+    content: "\f760";
+}
+
+.ms-visio-online-logo-cloud32::before {
+    content: "\f761";
+}
+
+.ms-visio-diagram-sync::before {
+    content: "\f762";
+}
+
+.ms-event12::before {
+    content: "\f763";
+}
+
+.ms-event-date-missed12::before {
+    content: "\f764";
+}
+
+.ms-user-optional::before {
+    content: "\f767";
+}
+
+.ms-responses-menu::before {
+    content: "\f768";
+}
+
+.ms-double-down-arrow::before {
+    content: "\f769";
+}
+
+.ms-distribute-down::before {
+    content: "\f76a";
+}
+
+.ms-bookmark-report::before {
+    content: "\f76b";
+}
+
+.ms-filter-settings::before {
+    content: "\f76c";
+}
+
+.ms-gripper-dots-vertical::before {
+    content: "\f772";
+}
+
+.ms-mail-attached::before {
+    content: "\f774";
+}
+
+.ms-add-in::before {
+    content: "\f775";
+}
+
+.ms-show-time-as::before {
+    content: "\f787";
+}
+
+.ms-file-request::before {
+    content: "\f789";
+}
+
+.ms-work-item-alert::before {
+    content: "\f78f";
+}
+
+.ms-power-b-i-logo16::before {
+    content: "\f790";
+}
+
+.ms-power-b-i-logo-backplate16::before {
+    content: "\f791";
+}
+
+.ms-bulleted-list-text::before {
+    content: "\f792";
+}
+
+.ms-bulleted-list-bullet::before {
+    content: "\f793";
+}
+
+.ms-bulleted-list-text-mirrored::before {
+    content: "\f794";
+}
+
+.ms-bulleted-list-bullet-mirrored::before {
+    content: "\f795";
+}
+
+.ms-numbered-list-text::before {
+    content: "\f796";
+}
+
+.ms-numbered-list-number::before {
+    content: "\f797";
+}
+
+.ms-numbered-list-text-mirrored::before {
+    content: "\f798";
+}
+
+.ms-numbered-list-number-mirrored::before {
+    content: "\f799";
+}
+
+.ms-remove-link-chain::before {
+    content: "\f79a";
+}
+
+.ms-remove-link-x::before {
+    content: "\f79b";
+}
+
+.ms-fabric-text-highlight::before {
+    content: "\f79c";
+}
+
+.ms-clear-formatting-a::before {
+    content: "\f79d";
+}
+
+.ms-clear-formatting-eraser::before {
+    content: "\f79e";
+}
+
+.ms-photo2-fill::before {
+    content: "\f79f";
+}
+
+.ms-increase-indent-text::before {
+    content: "\f7a0";
+}
+
+.ms-increase-indent-arrow::before {
+    content: "\f7a1";
+}
+
+.ms-decrease-indent-text::before {
+    content: "\f7a2";
+}
+
+.ms-decrease-indent-arrow::before {
+    content: "\f7a3";
+}
+
+.ms-increase-indent-text-mirrored::before {
+    content: "\f7a4";
+}
+
+.ms-increase-indent-arrow-mirrored::before {
+    content: "\f7a5";
+}
+
+.ms-decrease-indent-text-mirrored::before {
+    content: "\f7a6";
+}
+
+.ms-decrease-indent-arrow-mirrored::before {
+    content: "\f7a7";
+}
+
+.ms-check-list-text::before {
+    content: "\f7a8";
+}
+
+.ms-check-list-check::before {
+    content: "\f7a9";
+}
+
+.ms-check-list-text-mirrored::before {
+    content: "\f7aa";
+}
+
+.ms-check-list-check-mirrored::before {
+    content: "\f7ab";
+}
+
+.ms-number-symbol::before {
+    content: "\f7ac";
+}
+
+.ms-coupon::before {
+    content: "\f7bc";
+}
+
+.ms-verified-brand::before {
+    content: "\f7bd";
+}
+
+.ms-release-gate::before {
+    content: "\f7be";
+}
+
+.ms-release-gate-check::before {
+    content: "\f7bf";
+}
+
+.ms-release-gate-error::before {
+    content: "\f7c0";
+}
+
+.ms-m365-invoicing-logo::before {
+    content: "\f7c1";
+}
+
+.ms-fabric-text-highlight-composite::before {
+    content: "\f7da";
+}
+
+.ms-dataflows::before {
+    content: "\f7dd";
+}
+
+.ms-generic-scan-filled::before {
+    content: "\f7de";
+}
+
+.ms-diagnostic-data-bar-tooltip::before {
+    content: "\f7df";
+}
+
+.ms-save-to-mobile::before {
+    content: "\f7e0";
+}
+
+.ms-orientation2::before {
+    content: "\f7e1";
+}
+
+.ms-screen-cast::before {
+    content: "\f7e2";
+}
+
+.ms-show-grid::before {
+    content: "\f7e3";
+}
+
+.ms-snap-to-grid::before {
+    content: "\f7e4";
+}
+
+.ms-contact-list::before {
+    content: "\f7e5";
+}
+
+.ms-new-mail::before {
+    content: "\f7ea";
+}
+
+.ms-eye-shadow::before {
+    content: "\f7eb";
+}
+
+.ms-campaign-template::before {
+    content: "\f811";
+}
+
+.ms-chart-template::before {
+    content: "\f812";
+}
+
+.ms-page-list-filter::before {
+    content: "\f813";
+}
+
+.ms-secondary-nav::before {
+    content: "\f814";
+}
+
+.ms-column-vertical-section::before {
+    content: "\f81e";
+}
+
+.ms-skype-circle-slash::before {
+    content: "\f825";
+}
+
+.ms-skype-slash::before {
+    content: "\f826";
+}
+
+.ms-customize-toolbar::before {
+    content: "\f828";
+}
+
+.ms-duplicate-row::before {
+    content: "\f82a";
+}
+
+.ms-remove-from-trash::before {
+    content: "\f82b";
+}
+
+.ms-mail-options::before {
+    content: "\f82c";
+}
+
+.ms-childof::before {
+    content: "\f82d";
+}
+
+.ms-footer::before {
+    content: "\f82e";
+}
+
+.ms-header::before {
+    content: "\f82f";
+}
+
+.ms-bar-chart-vertical-fill::before {
+    content: "\f830";
+}
+
+.ms-stacked-column-chart2-fill::before {
+    content: "\f831";
+}
+
+.ms-plain-text::before {
+    content: "\f834";
+}
+
+.ms-accessibilty-checker::before {
+    content: "\f835";
+}
+
+.ms-one-drive-file-vault::before {
+    content: "\f838";
+}
+
+.ms-database-sync::before {
+    content: "\f842";
+}
+
+.ms-tab-one-column::before {
+    content: "\f849";
+}
+
+.ms-tab-two-column::before {
+    content: "\f84a";
+}
+
+.ms-tab-three-column::before {
+    content: "\f84b";
+}
