@@ -1,7 +1,9 @@
 import { Component, ViewChild, AfterViewInit } from '@angular/core';
 import { HttpClient} from '@angular/common/http';
+import { ChangeDetectorRef } from '@angular/core';
+import { DomSanitizer } from '@angular/platform-browser';
 
-interface serverResponse {
+interface ServerResponse {
   [timestamp: string] : string[];
 }
 
@@ -12,32 +14,40 @@ interface serverResponse {
 })
 
 export class AppComponent implements AfterViewInit{
-  alarmOn = false;
-  quadview = true;
-  isFullscreen = false;
-  lastDetectionTime = "";
-  counter = 0;
-  @ViewChild('videoElement', {static: false}) video: any;
+  
+  // This will get the HTMLElement in app.component.html for the videos.
+  // Look for #videoElement* in app.component.html
   @ViewChild('videoElement1', {static: false}) video1: any;
   @ViewChild('videoElement2', {static: false}) video2: any;
   @ViewChild('videoElement3', {static: false}) video3: any;
   @ViewChild('videoElement4', {static: false}) video4: any;
+
+  // Interval at which we call the backend to get results
+  fetch_interval_ms = 1000;
+  // Boolean that can make the entire screen flash red when a shooter is there
+  alarmOn = false; 
+  // Camera id of the active camera in which the shooter last was
   activeCamera = "";
+  // Camera id to HTMLVideoElement
   cameraMap = {};
+  // Camera id to icon map
   cameraIconMap = {};
+  // Camera id to stream url map
   cameraStreamMap = {};
-  startTime: Date;
-  constructor(private http: HttpClient) {
 
-  }
+  // Constructor injects http to communicate with backend
+  // ChangeDetectorRef is to avoid an issue in dev environment
+  // DomSanitizer is to trust the urls. (May be a security issue)
+  constructor(private http: HttpClient, private ref: ChangeDetectorRef, private sanitizer: DomSanitizer) {}
 
+  // This function is called right after the view is initialized
+  // At this point we are sure that video1, video2, video3 and video4 are initialized
   ngAfterViewInit(): void {
-    this.startTime = new Date();
     this.cameraStreamMap = {
-      "camera21" : "http://192.168.43.224:3000",
-      "camera22" : "http://localhost:8080/1",
-      "camera24" : "http://localhost:8080/2",
-      "camera26" : "http://localhost:8080/3",
+      "camera21" : this.sanitizer.bypassSecurityTrustResourceUrl("http://192.168.43.224:3000"), // TODO: replace with actual url
+      "camera22" : this.sanitizer.bypassSecurityTrustResourceUrl("http://192.168.43.224:3000"), // TODO: replace with actual url
+      "camera24" : this.sanitizer.bypassSecurityTrustResourceUrl("http://192.168.43.224:3000"), // TODO: replace with actual url
+      "camera26" : this.sanitizer.bypassSecurityTrustResourceUrl("http://192.168.43.224:3000")  // TODO: replace with actual url
     };
     this.cameraIconMap = {
       "camera21" : "target1",
@@ -45,116 +55,64 @@ export class AppComponent implements AfterViewInit{
       "camera24" : "target3",
       "camera26" : "target4",
     };
-    if (this.quadview) {
-      this.cameraMap = {
-        "camera21": this.video1,
-        "camera22": this.video2,
-        "camera24": this.video3,
-        "camera26": this.video4
-      }
+    this.cameraMap = {
+      "camera21": this.video1,
+      "camera22": this.video2,
+      "camera24": this.video3,
+      "camera26": this.video4
     }
+    this.setCameraDimensions();
+    this.ref.detectChanges();
+    // Gets the values from backend at every fetch_interval
     setInterval(()=> {
-      this.getResponse();
-    }, 1000);
-    this.setCameras();
+      this.getValues();
+    }, this.fetch_interval_ms);
   }
 
 
-  public setCameras(): void {
+  public setCameraDimensions(): void {
     setTimeout(()=> {
       let aspectRatio = 16.0 / 9.0;
-      if (!this.quadview) {
-        let width = 0;
-        if (this.isFullscreen) {
-          width = 1375;
-        } else {
-          width = 1100;
-        }
-        let height = width / aspectRatio;
-        this.video.nativeElement.width = width;
-        this.video.nativeElement.height = height;
-      } else {
-        let width = 0;
-        if (this.isFullscreen) {
-          width = 700;
-        } else {
-          width = 600;
-        }
-        let height = width / aspectRatio;
-        this.video1.nativeElement.width = width;
-        this.video1.nativeElement.height = height;
-        this.video2.nativeElement.width = width;
-        this.video2.nativeElement.height = height;
-        this.video3.nativeElement.width = width;
-        this.video3.nativeElement.height = height;
-        this.video4.nativeElement.width = width;
-        this.video4.nativeElement.height = height;
-      }
+      let width = 600;
+      let height = width / aspectRatio;
+      this.video1.nativeElement.width = width;
+      this.video1.nativeElement.height = height;
+      this.video2.nativeElement.width = width;
+      this.video2.nativeElement.height = height;
+      this.video3.nativeElement.width = width;
+      this.video3.nativeElement.height = height;
+      this.video4.nativeElement.width = width;
+      this.video4.nativeElement.height = height;
     })
   }
 
-  public switchView(): void {
-    this.quadview = !this.quadview;
-    setTimeout(() => {
-      if (this.quadview) {
-        this.cameraMap = {
-          "camera21": this.video1,
-          "camera22": this.video2,
-          "camera24": this.video3,
-          "camera26": this.video4
-        }
-      }
-      this.setCameras();
-    }, 0);
-  }
-
-  public fullscreen(): void {
-    this.setCameras();
-    this.isFullscreen = !this.isFullscreen;
-    if(this.isFullscreen) {
-      (document.getElementsByClassName("vidContainer")[0] as any).style.width = "100vw";
-    } else {
-      (document.getElementsByClassName("vidContainer")[0] as any).style.width = "69vw";
-    }
-  }
-
-  public getCameraSrc(): string {
-    return this.cameraStreamMap[this.activeCamera];
-  }
-
-  public getResponse(): any {    
-    this.http.get("https://tsihotapi.azurewebsites.net/api/values").subscribe((data)=> {
-      const keys = Object.keys(this.cameraMap)
+  /**
+   * Gets the values of which camera the shooter is in.
+   */
+  public getValues(): void {    
+    this.http.get("https://tsihotapi.azurewebsites.net/api/values").subscribe((data: ServerResponse) => {
+      // Make sure to remove all the alerting css in case the shooter is no longer in a certain area
+      const keys = Object.keys(this.cameraMap);
+      this.alarmOn = false;
       for (const key of keys) {
         this.cameraMap[key].nativeElement.classList.remove("red");
         document.getElementsByClassName(this.cameraIconMap[key])[0].classList.remove("target-active");
       }
       if (data) {
-        // TODO : keep track of last time. If it is the same for 1 minute remove the active cam
+        const max_delay_ms = 5000;
+        // Last time gets the latest time received from the backend.
         let lastTime = Object.keys(data).reduce((a, b) => a > b ? a : b);
-        console.log(new Date().getTime() - new Date(lastTime).getTime());
-        if (new Date().getTime() - new Date(lastTime).getTime() < 10000) {
+        // If the last time we get from the backend was more than a certain time ago, we don't alert
+        if (new Date().getTime() - new Date(lastTime).getTime() < max_delay_ms) {
+          this.alarmOn = true;
+          // Returns the name of the active camera. (Returns first one in case there are many)
           this.activeCamera = data[lastTime][0];
+          // css class red will make the border of the video red
           this.cameraMap[this.activeCamera].nativeElement.classList.add("red");
+          // css class target-active will make the camera flash on the mini-map
           document.getElementsByClassName(this.cameraIconMap[data[lastTime][0]])[0].classList.add("target-active");
-        } 
-        // if (this.lastDetectionTime === lastTime) {
-        //   this.counter++;
-        // } else {
-        //   this.lastDetectionTime = lastTime;
-        //   this.counter == 0;
-        // }
-
-        // if(this.counter < 60 && ( new Date(this.lastDetectionTime) > this.startTime)) {
-        //   this.alarmOn = true;
-        //   this.activeCamera = data[lastTime][0];
-        //   this.cameraMap[this.activeCamera].nativeElement.classList.add("red");
-        //   document.getElementsByClassName(this.cameraIconMap[data[lastTime][0]])[0].classList.add("target-active");
-        // } else {
-        //   this.alarmOn = false;
-        // }
-      }
-      return data;
+        }
+      } 
     });
   }
 }
