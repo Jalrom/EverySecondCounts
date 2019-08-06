@@ -23,7 +23,7 @@ export class AppComponent implements AfterViewInit{
   @ViewChild('videoElement4', {static: false}) video4: any;
 
   // Interval at which we call the backend to get results
-  fetch_interval_ms = 1000;
+  fetch_interval_ms = 2000;
   // Boolean that can make the entire screen flash red when a shooter is there
   alarmOn = false; 
   // Camera id of the active camera in which the shooter last was
@@ -45,9 +45,9 @@ export class AppComponent implements AfterViewInit{
   ngAfterViewInit(): void {
     this.cameraStreamMap = {
       "camera21" : this.sanitizer.bypassSecurityTrustResourceUrl("http://192.168.43.224:3000"), // TODO: replace with actual url
-      "camera22" : this.sanitizer.bypassSecurityTrustResourceUrl("http://192.168.43.224:3000"), // TODO: replace with actual url
+      "camera22" : this.sanitizer.bypassSecurityTrustResourceUrl("http://192.168.43.81:3000"), // TODO: replace with actual url
       "camera24" : this.sanitizer.bypassSecurityTrustResourceUrl("http://192.168.43.224:3000"), // TODO: replace with actual url
-      "camera26" : this.sanitizer.bypassSecurityTrustResourceUrl("http://192.168.43.224:3000")  // TODO: replace with actual url
+      "camera26" : this.sanitizer.bypassSecurityTrustResourceUrl("http://192.168.43.81:3000")  // TODO: replace with actual url
     };
     this.cameraIconMap = {
       "camera21" : "target1",
@@ -79,10 +79,10 @@ export class AppComponent implements AfterViewInit{
       this.video1.nativeElement.height = height;
       this.video2.nativeElement.width = width;
       this.video2.nativeElement.height = height;
-      this.video3.nativeElement.width = width;
-      this.video3.nativeElement.height = height;
-      this.video4.nativeElement.width = width;
-      this.video4.nativeElement.height = height;
+      // this.video3.nativeElement.width = width;
+      // this.video3.nativeElement.height = height;
+      // this.video4.nativeElement.width = width;
+      // this.video4.nativeElement.height = height;
     })
   }
 
@@ -90,13 +90,15 @@ export class AppComponent implements AfterViewInit{
    * Gets the values of which camera the shooter is in.
    */
   public getValues(): void {    
-    this.http.get("https://tsihotapi.azurewebsites.net/api/values").subscribe((data: ServerResponse) => {
+    this.http.get("http://192.168.43.71/api/values").subscribe((data: ServerResponse) => {
       // Make sure to remove all the alerting css in case the shooter is no longer in a certain area
       const keys = Object.keys(this.cameraMap);
       this.alarmOn = false;
       for (const key of keys) {
-        this.cameraMap[key].nativeElement.classList.remove("red");
-        document.getElementsByClassName(this.cameraIconMap[key])[0].classList.remove("target-active");
+        if(this.cameraMap[key]) {
+          this.cameraMap[key].nativeElement.classList.remove("red");
+          document.getElementsByClassName(this.cameraIconMap[key])[0].classList.remove("target-active");
+        }
       }
       if (data) {
         const max_delay_ms = 5000;
@@ -104,7 +106,6 @@ export class AppComponent implements AfterViewInit{
         let lastTime = Object.keys(data).reduce((a, b) => a > b ? a : b);
         // If the last time we get from the backend was more than a certain time ago, we don't alert
         if (new Date().getTime() - new Date(lastTime).getTime() < max_delay_ms) {
-          this.alarmOn = true;
           // Returns the name of the active camera. (Returns first one in case there are many)
           this.activeCamera = data[lastTime][0];
           // css class red will make the border of the video red
