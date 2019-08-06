@@ -23,7 +23,7 @@ export class AppComponent implements AfterViewInit{
   @ViewChild('videoElement4', {static: false}) video4: any;
 
   // Interval at which we call the backend to get results
-  fetch_interval_ms = 2000;
+  fetch_interval_ms = 1000;
   // Boolean that can make the entire screen flash red when a shooter is there
   alarmOn = false; 
   // Camera id of the active camera in which the shooter last was
@@ -90,7 +90,7 @@ export class AppComponent implements AfterViewInit{
    * Gets the values of which camera the shooter is in.
    */
   public getValues(): void {    
-    this.http.get("http://192.168.43.71/api/values").subscribe((data: ServerResponse) => {
+    this.http.get("https://tsihotapi.azurewebsites.net/api/values").subscribe((data: ServerResponse) => {
       // Make sure to remove all the alerting css in case the shooter is no longer in a certain area
       const keys = Object.keys(this.cameraMap);
       this.alarmOn = false;
@@ -101,7 +101,7 @@ export class AppComponent implements AfterViewInit{
         }
       }
       if (data) {
-        const max_delay_ms = 5000;
+        const max_delay_ms = 6000;
         // Last time gets the latest time received from the backend.
         let lastTime = Object.keys(data).reduce((a, b) => a > b ? a : b);
         // If the last time we get from the backend was more than a certain time ago, we don't alert
